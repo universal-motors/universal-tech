@@ -3,7 +3,6 @@
 import { Box } from "@mui/material";
 import Link from "next/link";
 export default function HomePage() {
-
   return (
     <Box sx={{ width: "100%" }}>
       <section
@@ -26,9 +25,8 @@ export default function HomePage() {
             </h4>
 
             <p className="text-white opacity-50 mb-0 max-w-2xl text-lg">
-              Launch your campaign and benefit from our expertise on
-              designing and managing conversion centered Tailwind CSS html
-              page.
+              Launch your campaign and benefit from our expertise on designing
+              and managing conversion centered Tailwind CSS html page.
             </p>
 
             <div className="relative mt-10">
