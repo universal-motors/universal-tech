@@ -6,14 +6,14 @@ type Prop = {
 export default function CustomLink({ text, to }: Prop) {
   return (
     <Link
-      className="nav-item"
+      className="cursor-pointer hover:text-[#00A0C1] text-[#737373]"
       to={to}
       // activeclassname="active"
       spy={true}
       smooth={true}
       duration={500}
     >
-      <span className="nav-link">{text}</span>
+      <span>{text}</span>
     </Link>
   );
 }
