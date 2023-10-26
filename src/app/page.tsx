@@ -1,30 +1,34 @@
 "use client";
+import image from "@/assets/images/card-item.png";
 import img from "@/assets/images/cover.png";
+import AwardIcon from "@/assets/svg2/award";
+import CasesIcon from "@/assets/svg2/cases";
+import HappyIcon from "@/assets/svg2/happy";
+import ThreeIcon from "@/assets/svg2/three";
+import Awsicon from "@/assets/svgs/aws";
 import BagIcon from "@/assets/svgs/bag";
+import CallIcon from "@/assets/svgs/call";
 import DigitalIcon from "@/assets/svgs/digital";
+import FacebookIcon from "@/assets/svgs/facebook";
 import FirmIcon from "@/assets/svgs/firmIcon";
+import HooliIcon from "@/assets/svgs/hooli";
+import InstagramIcon from "@/assets/svgs/instagram";
+import LeaveIcon from "@/assets/svgs/leave";
+import LocationIcon from "@/assets/svgs/location";
+import Location2Icon from "@/assets/svgs/location2";
+import LyftIcon from "@/assets/svgs/lyft";
+import MaskIcon from "@/assets/svgs/mask";
+import PhoneIcon from "@/assets/svgs/phone";
 import QuickIcon from "@/assets/svgs/quick";
 import Quick2Icon from "@/assets/svgs/quick2";
+import StripeIcon from "@/assets/svgs/stripe";
+import TweetIcon from "@/assets/svgs/tweet";
+import Tweeter2Icon from "@/assets/svgs/tweeter2";
+import Tweeter3Icon from "@/assets/svgs/tweeter3";
+import YoutubeIcon from "@/assets/svgs/youtube";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import image from "@/assets/images/card-item.png";
-import HooliIcon from "@/assets/svgs/hooli";
-import LyftIcon from "@/assets/svgs/lyft";
-import LeaveIcon from "@/assets/svgs/leave";
-import StripeIcon from "@/assets/svgs/stripe";
-import Awsicon from "@/assets/svgs/aws";
-import MaskIcon from "@/assets/svgs/mask";
-import CallIcon from "@/assets/svgs/call";
-import LocationIcon from "@/assets/svgs/location";
-import TweetIcon from "@/assets/svgs/tweet";
-import PhoneIcon from "@/assets/svgs/phone";
-import Location2Icon from "@/assets/svgs/location2";
-import Tweeter2Icon from "@/assets/svgs/tweeter2";
-import FacebookIcon from "@/assets/svgs/facebook";
-import InstagramIcon from "@/assets/svgs/instagram";
-import Tweeter3Icon from "@/assets/svgs/tweeter3";
-import YoutubeIcon from "@/assets/svgs/youtube";
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -121,6 +125,52 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="text-center">
+          <div className="font-bold text-[40px] mt-[50px] ">WHY CHOOSE US</div>
+          <div>
+            Problems trying to resolve the conflict between the two major realms
+          </div>
+          <div>of Classical physics: Newtonian mechanics</div>
+        </div>
+        <div className="flex justify-center mt-[50px]">
+          <div className="shadow w-[230px] h-[209px]  flex flex-col items-center justify-center">
+            <div className="w-[50px] h-[50px]">
+              <ThreeIcon />
+            </div>
+            <div className="font-bold text-[30px] mt-[10px]">3K</div>
+            <div className=" text-[16px] text-[#737373] font-bold">
+              CASES DONE
+            </div>
+          </div>
+
+          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
+            <div>
+              <HappyIcon />
+            </div>
+            <div className="font-bold text-[30px] mt-[10px]">45</div>
+            <div className="text-[#737373] text-[16px] font-bold">
+              HAPPY CUSTOMERS
+            </div>
+          </div>
+
+          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
+            <div>
+              <AwardIcon />
+            </div>
+            <div className="font-bold text-[30px] mt-[10px]">12+</div>
+            <div className="text-[#737373] font-bold">AWARD WINNING</div>
+          </div>
+
+          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
+            <div>
+              <CasesIcon />
+            </div>
+            <div className="font-bold text-[30px] mt-[10px]">1.5K</div>
+            <div className="text-[#737373] font-bold">CASES DONE</div>
           </div>
         </div>
       </div>
