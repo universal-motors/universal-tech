@@ -140,7 +140,7 @@ export default function HomePage() {
           </div>
           <div>of Classical physics: Newtonian mechanics</div>
         </div>
-        <div className="flex justify-center mt-[50px]">
+        <div className="flex flex-wrap justify-center mt-[50px]">
           <div className="shadow w-[230px] h-[209px] ml-[30px]  flex flex-col items-center justify-center">
             <div className="w-[50px] h-[50px]">
               <ThreeIcon />
@@ -187,7 +187,7 @@ export default function HomePage() {
           the two major realms of Classical physics: Newtonian mechanics
         </div>
       </div>
-      <div className="flex justify-center mt-[90px]">
+      <div className="flex flex-wrap justify-center mt-[90px]">
         <div className="ml-[30px] sm:mb-5">
           <div className="shadow-lg w-[232px] h-[220px]">
             <div className="font-bold text-[16] ml-[30px] mt-[30px]">
@@ -274,7 +274,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center ">
+        <div className="flex items-center justify-center flex-col md:flex-row w-full">
           <div className="mt-14 mr-40">
             <Image alt="img" src={image} />
           </div>
@@ -328,7 +328,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="bg-[#FAFAFA] mt-20">
-        <div className="bg-[#FAFAFA] w-[1440] h-[339] flex justify-evenly">
+        <div className="bg-[#FAFAFA] w-[1440] h-[339] flex justify-evenly flex-wrap gap-5">
           <div className="mt-20">
             <HooliIcon />
           </div>
