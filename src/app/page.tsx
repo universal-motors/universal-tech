@@ -45,7 +45,7 @@ export default function HomePage() {
         />
         <div className="absolute w-full">
           <div className="grid grid-cols-1 mt-40 ml-40">
-            <h1 className="text-black font-extrabold text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative">
+            <h1 className="text-black font-extrabold text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
               EMPOWER <br />
               YOUR BUSINESS
               <span
@@ -119,7 +119,7 @@ export default function HomePage() {
                 </h1>
               </div>
               <div>
-                <p className="text-[#737373] text-[14px] text-[#FFFFFF]">
+                <p className="text-[14px] text-[#FFFFFF]">
                   the quick fox jumps over the <br />
                   lazy dog
                 </p>
@@ -174,7 +174,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* ----------------------------------------------------------------------------------------------- */}
       <div className="mt-[300px]">
         <div className="text-center">
           <div className="text-[40px] font-bold ">
@@ -191,8 +190,8 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="flex justify-evenly">
-          <div className="mt-14">
+        <div className="flex justify-center ">
+          <div className="mt-14 mr-40">
             <Image alt="img" src={image} />
           </div>
           <div className="mt-14">
@@ -244,7 +243,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* ------------------------------------------------------------------------------------------------------ */}
       <div className="bg-[#FAFAFA] mt-20">
         <div className="bg-[#FAFAFA] w-[1440] h-[339] flex justify-evenly">
           <div className="mt-20">
@@ -266,24 +264,29 @@ export default function HomePage() {
             <MaskIcon />
           </div>
         </div>
-        <div className="flex justify-center bg-[#252B42] mt-20">
-          <div className="bg-[#16697A] w-[986px] h-[124px] flex justify-evenly pt-10 ">
-            <div>
-              <h1 className="font-bold text-[24px] text-[#FFFFFF]">
-                Subscribe For Latest <br />
-                Newsletter
-              </h1>
-            </div>
-            <div className="flex border-[1px] w-[450px] rounded-[5px] h-[58px]">
+        <div className="relative w-full h-[300px]">
+          <div className="flex justify-center h-[100px] bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
+          <div className="absolute bottom-14 w-full flex justify-center">
+            <div className="bg-[#16697A] w-[70%] h-[124px] flex justify-between pt-6 pl-10 pr-10  ">
               <div>
-                <input
-                  type="text"
-                  placeholder="YOUR EMAIL"
-                  className="text-[14px] w-[333px] h-[58px] font-normal pl-5"
-                />
+                <h1 className="font-bold text-[24px] text-[#FFFFFF]">
+                  Subscribe For Latest <br />
+                  Newsletter
+                </h1>
               </div>
-              <div>
-                <button className="w-[117px] h-[58px]">Subscribe</button>
+              <div className="flex border-[1px] w-[450px] rounded-[5px] h-[58px]">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="YOUR EMAIL"
+                    className="text-[14px] w-[333px] h-[58px] font-normal pl-5"
+                  />
+                </div>
+                <div>
+                  <button className="w-[117px] h-[58px] text-[#ffffff]">
+                    Subscribe
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -351,7 +354,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* ------------------------------------------------------------------------------------------------------------- */}
       <div className="flex justify-evenly bg-[#FAFAFA]  h-[142px] pt-14 ">
         <div>
           <div className="font-bold text-[24px]">
