@@ -82,7 +82,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center mt-[180px]">
+          <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-center sm:justify-center mt-[180px]">
             <div className="bg-[#FFFFFF] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
               <div>
                 <BagIcon />
@@ -376,7 +376,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="bg-[#F3F3F3]">
+      <div className="bg-[#F3F3F3] ">
         <div className="text-center">
           <div className="text-[40px] font-bold pt-16">
             <h1>Get In Touch</h1>
@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="flex justify-center mt-24">
+        <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-center  mt-24">
           <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
             <div className="ml-32">
               <CallIcon />
@@ -454,7 +454,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex justify-center text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
+      <div className="flex justify-center flex-wrap text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
         <div className="mr-40">
           <div className="font-bold text-[16px]">Company Info</div>
           <div className="mt-8">About Us</div>
@@ -506,7 +506,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex justify-between pt-8 bg-[#FAFAFA] pb-8">
+      <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-between pt-8 bg-[#FAFAFA] pb-8">
         <div className="ml-52">
           Made With Love By Figmaland All Right Reserved
         </div>
