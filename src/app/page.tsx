@@ -275,7 +275,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex-col lg:flex items-center justify-center lg:flex-row w-full">
-          <div className="  ml-1 md:ml-44 w-[597px] h-[442px] mt-14 mr-40">
+          <div className="   w-[90%] sm:w-[597px] h-[442px] mt-14 m-auto">
             <Image className=" sm:w-[100%] sm:h-[100%]" alt="img" src={image} />
           </div>
           <div className="mt-14 ml-[30%] lg:ml-1">
@@ -351,7 +351,7 @@ export default function HomePage() {
         <div className="relative w-full h-[300px]">
           <div className="flex justify-center h-[100px] flex-wrap bg-none xl:bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
           <div className="absolute bottom-14 w-full flex-wrap justify-start flex lg:justify-center">
-            <div className="bg-[#16697A] w-[500px] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
+            <div className="bg-[#16697A] w-full sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
               <div>
                 <h1 className="font-bold text-[24px] text-[#FFFFFF]">
                   Subscribe For Latest <br />
@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="ml-[20%] sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
+        <div className="ml-0 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
           <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
             <div className="ml-32">
               <CallIcon />
