@@ -351,23 +351,23 @@ export default function HomePage() {
         <div className="relative w-full h-[300px]">
           <div className="flex justify-center h-[100px] flex-wrap bg-none xl:bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
           <div className="absolute bottom-14 w-full flex-wrap justify-start flex lg:justify-center">
-            <div className="bg-[#16697A] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
+            <div className="bg-[#16697A] w-[500px] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
               <div>
                 <h1 className="font-bold text-[24px] text-[#FFFFFF]">
                   Subscribe For Latest <br />
                   Newsletter
                 </h1>
               </div>
-              <div className="flex border-[1px] w-[450px] rounded-[5px] h-[58px]">
+              <div className="flex border-[1px]  sm:w-[450px] rounded-[5px] h-[58px]">
                 <div>
                   <input
                     type="text"
                     placeholder="YOUR EMAIL"
-                    className="text-[14px] w-[333px] h-[58px] font-normal pl-5"
+                    className="text-[14px] w-[200px] sm:w-[333px] h-[58px] font-normal pl-5"
                   />
                 </div>
                 <div>
-                  <button className="w-[117px] h-[58px] text-[#ffffff]">
+                  <button className="w-[90px] sm:w-[117px] h-[58px] text-[#ffffff]">
                     Subscribe
                   </button>
                 </div>
@@ -438,7 +438,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
+      <div className=" flex  justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
         <div>
           <div className="font-bold text-[24px]">
             Consulting Agency For Your Business
