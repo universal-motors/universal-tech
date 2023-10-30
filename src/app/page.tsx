@@ -278,7 +278,7 @@ export default function HomePage() {
           <div className="   w-[90%] sm:w-[597px] h-[442px] mt-14 m-auto">
             <Image className=" sm:w-[100%] sm:h-[100%]" alt="img" src={image} />
           </div>
-          <div className="mt-14 ml-[30%] lg:ml-1">
+          <div className="mt-14 ml-10 lg:ml-1">
             <div className="text-[40px] font-bold">
               <h2>
                 Most trusted in <br />
@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="ml-0 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
+        <div className=" ml-10 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
           <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
             <div className="ml-32">
               <CallIcon />
