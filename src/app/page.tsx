@@ -49,7 +49,7 @@ export default function HomePage() {
         />
         <div className="absolute w-full">
           <div className="grid grid-cols-1 mt-40 ml-[50px] md:ml-40">
-            <h1 className="text-black font-extrabold text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
+            <h1 className="text-black font-extrabold text-[30px] sm:text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
               EMPOWER <br />
               YOUR BUSINESS
               <span
@@ -82,7 +82,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap flex-row gap-y-9 mt-[180px] m-auto w-[90%] justify-center">
+          <div className="flex flex-wrap flex-row gap-y-9 mt-[180px] ml-14 sm:ml-24 md:ml-1 w-[90%] justify-center">
             <div className="bg-[rgb(255,255,255)] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
               <div>
                 <BagIcon />
@@ -275,8 +275,8 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex-col lg:flex items-center justify-center lg:flex-row w-full">
-          <div className=" ml-[30%] lg:ml-1 mt-14 mr-40">
-            <Image alt="img" src={image} />
+          <div className="  ml-1 md:ml-44 w-[597px] h-[442px] mt-14 mr-40">
+            <Image className=" sm:w-[100%] sm:h-[100%]" alt="img" src={image} />
           </div>
           <div className="mt-14 ml-[30%] lg:ml-1">
             <div className="text-[40px] font-bold">
@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="ml-[10px] sm:ml-[30%] sm:[30%] lg:ml-1 flex-row  lg:flex justify-center mt-24">
+        <div className="ml-[20%] sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
           <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
             <div className="ml-32">
               <CallIcon />
