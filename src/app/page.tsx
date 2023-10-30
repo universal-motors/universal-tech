@@ -48,7 +48,7 @@ export default function HomePage() {
           }}
         />
         <div className="absolute w-full">
-          <div className="grid grid-cols-1 mt-40 ml-40">
+          <div className="grid grid-cols-1 mt-40 ml-[50px] md:ml-40">
             <h1 className="text-black font-extrabold text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
               EMPOWER <br />
               YOUR BUSINESS
@@ -64,11 +64,11 @@ export default function HomePage() {
               but thing on a small scale
             </p>
           </div>
-          <div className="flex ml-40 gap-6">
+          <div className="flex ml-[50px] md:ml-40 gap-6">
             <div className="relative mt-10 ">
               <Link
                 href="#"
-                className="w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-[12px] hover:border-[#00A0C1] text-[#FFFFFF] rounded-full"
+                className="w-[140px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-[12px] hover:border-[#00A0C1] text-white rounded-full"
               >
                 Get Quote Now
               </Link>
@@ -76,14 +76,14 @@ export default function HomePage() {
             <div className="relative mt-10">
               <Link
                 href="#"
-                className="w-[185px] h-[48px]  btn bg-[#E7EBEE] hover:bg-[#00A0C1] border-[#00A0C1] pt-[12px] hover:text-[#FFFFFF] text-[#00A0C1] rounded-full"
+                className="w-[140px] text-xs sm:text-base sm:w-[185px] h-[48px]  btn bg-[#E7EBEE] hover:bg-[#00A0C1] border-[#00A0C1] pt-[12px] hover:text-[#FFFFFF] text-[#00A0C1] rounded-full"
               >
                 Learn More
               </Link>
             </div>
           </div>
-          <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-center sm:justify-center mt-[180px]">
-            <div className="bg-[#FFFFFF] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
+          <div className="flex flex-wrap flex-row gap-y-9 mt-[180px] m-auto w-[90%] justify-center">
+            <div className="bg-[rgb(255,255,255)] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
               <div>
                 <BagIcon />
               </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#00A0C1] w-[328px] h-[210px]  flex flex-col  justify-center pl-[40px] shadow-xl">
+            <div className="bg-[#00A0C1] w-[328px] h-[210px] mr-[40px] flex flex-col  justify-center pl-[40px] shadow-xl">
               <div>
                 <DigitalIcon />
               </div>
@@ -134,7 +134,9 @@ export default function HomePage() {
       </div>
       <div>
         <div className="text-center">
-          <div className="font-bold text-[40px] mt-[50px] ">WHY CHOOSE US</div>
+          <div className="font-bold text-[40px]  mt-[750px] xl:mt-20 ">
+            WHY CHOOSE US
+          </div>
           <div>
             Problems trying to resolve the conflict between the two major realms
           </div>
@@ -178,7 +180,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* ------------------------ */}
 
       <div className="text-center mt-12">
         <div className="font-bold text-[40px] mt-[50px]">Practice Advice</div>
@@ -256,7 +257,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* ------------------------ */}
 
       <div className="mt-[300px]">
         <div className="text-center">
@@ -274,11 +274,11 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center flex-col md:flex-row w-full">
-          <div className="mt-14 mr-40">
+        <div className="flex-col lg:flex items-center justify-center lg:flex-row w-full">
+          <div className=" ml-[30%] lg:ml-1 mt-14 mr-40">
             <Image alt="img" src={image} />
           </div>
-          <div className="mt-14">
+          <div className="mt-14 ml-[30%] lg:ml-1">
             <div className="text-[40px] font-bold">
               <h2>
                 Most trusted in <br />
@@ -327,8 +327,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="bg-[#FAFAFA] mt-20">
-        <div className="bg-[#FAFAFA] w-[1440] h-[339] flex justify-evenly flex-wrap gap-5">
+      <div className="bg-[#FAFAFA] flex-wrap mt-20">
+        <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-[45%] md:ml-0.5 flex-row md:flex justify-evenly flex-wrap gap-5">
           <div className="mt-20">
             <HooliIcon />
           </div>
@@ -349,9 +349,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="relative w-full h-[300px]">
-          <div className="flex justify-center h-[100px] bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
-          <div className="absolute bottom-14 w-full flex justify-center">
-            <div className="bg-[#16697A] w-[70%] h-[124px] flex justify-between pt-6 pl-10 pr-10  ">
+          <div className="flex justify-center h-[100px] flex-wrap bg-none xl:bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
+          <div className="absolute bottom-14 w-full flex-wrap justify-start flex lg:justify-center">
+            <div className="bg-[#16697A] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
               <div>
                 <h1 className="font-bold text-[24px] text-[#FFFFFF]">
                   Subscribe For Latest <br />
@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-center  mt-24">
+        <div className=" ml-[30%] sm:[30%] lg:ml-1 flex-row  lg:flex justify-center mt-24">
           <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
             <div className="ml-32">
               <CallIcon />
@@ -404,7 +404,7 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center ">
+          <div className="w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
             <div className="ml-32">
               <LocationIcon />
             </div>
@@ -438,7 +438,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly bg-[#FAFAFA]  h-[142px] pt-14 ">
+      <div className=" flex justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
         <div>
           <div className="font-bold text-[24px]">
             Consulting Agency For Your Business
@@ -454,7 +454,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex justify-center flex-wrap text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
+      <div className="flex flex-col xl:flex-row  xl:justify-center pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
         <div className="mr-40">
           <div className="font-bold text-[16px]">Company Info</div>
           <div className="mt-8">About Us</div>
@@ -506,11 +506,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row justify-between pt-8 bg-[#FAFAFA] pb-8">
-        <div className="ml-52">
+      <div className=" flex flex-col lg:flex-row  lg:justify-between pt-8 bg-[#FAFAFA] pb-8">
+        <div className="ml-0 lg:ml-52">
           Made With Love By Figmaland All Right Reserved
         </div>
-        <div className="flex mr-52 ">
+        <div className="flex  mr-52 ">
           <div className="mr-7">
             <FacebookIcon />
           </div>
