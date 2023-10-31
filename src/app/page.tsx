@@ -386,7 +386,7 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="ml-10 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex  justify-center mt-24">
+        <div className="ml-100 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex  justify-center mt-24">
           <div className="w-[250px] sm:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col   justify-center text-center mt-7">
             <div className="ml-20 sm:ml-32">
               <CallIcon />
