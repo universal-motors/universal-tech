@@ -358,16 +358,16 @@ export default function HomePage() {
                   Newsletter
                 </h1>
               </div>
-              <div className="flex border-[1px]  sm:w-[450px] rounded-[5px] h-[58px]">
+              <div className="flex border-[1px]  sm:w-[450px] rounded-[5px] h-[40px] sm:h-[58px]">
                 <div>
                   <input
                     type="text"
                     placeholder="YOUR EMAIL"
-                    className="text-[14px] w-[200px] sm:w-[333px] h-[58px] font-normal pl-5"
+                    className="text-[14px] w-[150px] sm:w-[333px] h-[40px] sm:h-[58px] font-normal pl-5"
                   />
                 </div>
                 <div>
-                  <button className="w-[90px] sm:w-[117px] h-[58px] text-[#ffffff]">
+                  <button className="w-[50px] sm:w-[117px] h-[40px] text-[10px] sm:text-[14px] sm:h-[58px] text-[#ffffff]">
                     Subscribe
                   </button>
                 </div>
@@ -386,9 +386,9 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className=" ml-10 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex justify-center mt-24">
-          <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
-            <div className="ml-32">
+        <div className="ml-10 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex  justify-center mt-24">
+          <div className="w-[250px] sm:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col   justify-center text-center mt-7">
+            <div className="ml-20 sm:ml-32">
               <CallIcon />
             </div>
             <div className="text-[#252B42] mt-2 font-semibold">
@@ -404,8 +404,8 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
-            <div className="ml-32">
+          <div className="w-[250px] sm:w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
+            <div className="ml-20 sm:ml-32">
               <LocationIcon />
             </div>
             <div className="text-[#FFFFFF] mt-2">
@@ -419,8 +419,8 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
-            <div className="ml-32">
+          <div className="w-[250px] sm:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
+            <div className="ml-20 sm:ml-32">
               <TweetIcon />
             </div>
             <div className="text-[#252B42] mt-2 font-semibold">
