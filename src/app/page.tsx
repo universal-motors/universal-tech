@@ -64,11 +64,11 @@ export default function HomePage() {
               but thing on a small scale
             </p>
           </div>
-          <div className="flex ml-[50px] md:ml-40 gap-6">
+          <div className="flex ml-[30px] md:ml-40 gap-6">
             <div className="relative mt-10 ">
               <Link
                 href="#"
-                className="w-[140px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-[12px] hover:border-[#00A0C1] text-white rounded-full"
+                className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1] text-white rounded-full"
               >
                 Get Quote Now
               </Link>
@@ -76,14 +76,14 @@ export default function HomePage() {
             <div className="relative mt-10">
               <Link
                 href="#"
-                className="w-[140px] text-xs sm:text-base sm:w-[185px] h-[48px]  btn bg-[#E7EBEE] hover:bg-[#00A0C1] border-[#00A0C1] pt-[12px] hover:text-[#FFFFFF] text-[#00A0C1] rounded-full"
+                className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px]  btn bg-[#E7EBEE] hover:bg-[#00A0C1] border-[#00A0C1] pt-4 sm:pt-[12px] hover:text-[#FFFFFF] text-[#00A0C1] rounded-full"
               >
                 Learn More
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap flex-row gap-y-9 mt-[180px] ml-14 sm:ml-24 md:ml-1 w-[90%] justify-center">
-            <div className="bg-[rgb(255,255,255)] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
+          <div className="flex flex-wrap flex-row gap-y-9 mt-[180px]  m-auto  w-[85%] md:w-[95%] justify-center">
+            <div className="bg-[rgb(255,255,255)] w-[328px] h-[210px] mr-[0px] sm:mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
               <div>
                 <BagIcon />
               </div>
@@ -97,7 +97,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#FFFFFF] w-[328px] h-[210px] mr-[40px]  flex flex-col  justify-center pl-[40px] shadow-xl ">
+            <div className="bg-[#FFFFFF] w-[328px] h-[210px] mr-[0px] sm:mr-[40px]  flex flex-col  justify-center pl-[40px] shadow-xl ">
               <div>
                 <FirmIcon />
               </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#00A0C1] w-[328px] h-[210px] mr-[40px] flex flex-col  justify-center pl-[40px] shadow-xl">
+            <div className="bg-[#00A0C1] w-[328px] h-[210px] mr-[0px] sm:mr-[40px] flex flex-col  justify-center pl-[40px] shadow-xl">
               <div>
                 <DigitalIcon />
               </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
       </div>
       <div>
         <div className="text-center">
-          <div className="font-bold text-[40px]  mt-[750px] xl:mt-20 ">
+          <div className="font-bold text-[40px]  mt-[600px] xl:mt-28 ">
             WHY CHOOSE US
           </div>
           <div>
@@ -142,8 +142,8 @@ export default function HomePage() {
           </div>
           <div>of Classical physics: Newtonian mechanics</div>
         </div>
-        <div className="flex flex-wrap justify-center mt-[50px]">
-          <div className="shadow w-[230px] h-[209px] ml-[30px]  flex flex-col items-center justify-center">
+        <div className="flex flex-wrap gap-y-2 justify-center mt-[50px]">
+          <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px]  flex flex-col items-center justify-center">
             <div className="w-[50px] h-[50px]">
               <ThreeIcon />
             </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center ">
+          <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center ">
             <div>
               <HappyIcon />
             </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
+          <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
             <div>
               <AwardIcon />
             </div>
@@ -171,7 +171,7 @@ export default function HomePage() {
             <div className="text-[#737373] font-bold">AWARD WINNING</div>
           </div>
 
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
+          <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
             <div>
               <CasesIcon />
             </div>
@@ -275,10 +275,10 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex-col lg:flex items-center justify-center lg:flex-row w-full">
-          <div className="   w-[90%] sm:w-[597px] h-[442px] mt-14 m-auto">
-            <Image className=" sm:w-[100%] sm:h-[100%]" alt="img" src={image} />
+          <div className=" ml-10 md:ml-44 w-[90%] md:w-[597px] h-auto sm:h-[442px] mt-14 m-auto">
+            <Image className="w-[90%] sm:h-[100%]" alt="img" src={image} />
           </div>
-          <div className="mt-14 ml-10 lg:ml-1">
+          <div className="mt-5 sm:mt-14 ml-10 sm:ml-[30%] lg:ml-1">
             <div className="text-[40px] font-bold">
               <h2>
                 Most trusted in <br />
@@ -328,7 +328,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="bg-[#FAFAFA] flex-wrap mt-20">
-        <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-[45%] md:ml-0.5 flex-row md:flex justify-evenly flex-wrap gap-5">
+        <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-0  flex-col sm:flex-row flex justify-evenly items-center flex-wrap gap-5">
           <div className="mt-20">
             <HooliIcon />
           </div>
@@ -351,23 +351,23 @@ export default function HomePage() {
         <div className="relative w-full h-[300px]">
           <div className="flex justify-center h-[100px] flex-wrap bg-none xl:bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
           <div className="absolute bottom-14 w-full flex-wrap justify-start flex lg:justify-center">
-            <div className="bg-[#16697A] w-full sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
+            <div className="bg-[#16697A] m-auto w-[320px] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
               <div>
                 <h1 className="font-bold text-[24px] text-[#FFFFFF]">
                   Subscribe For Latest <br />
                   Newsletter
                 </h1>
               </div>
-              <div className="flex border-[1px]  sm:w-[450px] rounded-[5px] h-[40px] sm:h-[58px]">
+              <div className="flex border-[1px]  sm:w-[450px] rounded-[5px] h-[58px]">
                 <div>
                   <input
                     type="text"
                     placeholder="YOUR EMAIL"
-                    className="text-[14px] w-[150px] sm:w-[333px] h-[40px] sm:h-[58px] font-normal pl-5"
+                    className="text-[14px] w-[200px] sm:w-[333px] h-[58px] font-normal pl-5"
                   />
                 </div>
                 <div>
-                  <button className="w-[50px] sm:w-[117px] h-[40px] text-[10px] sm:text-[14px] sm:h-[58px] text-[#ffffff]">
+                  <button className="w-[70px] text-xs sm:text-base sm:w-[117px] h-[58px] text-[#ffffff]">
                     Subscribe
                   </button>
                 </div>
@@ -386,9 +386,9 @@ export default function HomePage() {
             the two major realms of Classical physics: Newtonian mechanics
           </div>
         </div>
-        <div className="ml-100 sm:ml-[30%]  lg:ml-1 flex-row  lg:flex  justify-center mt-24">
-          <div className="w-[250px] sm:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col   justify-center text-center mt-7">
-            <div className="ml-20 sm:ml-32">
+        <div className="  flex-row  lg:flex justify-center mt-24">
+          <div className="m-auto w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
+            <div className="ml-32">
               <CallIcon />
             </div>
             <div className="text-[#252B42] mt-2 font-semibold">
@@ -404,8 +404,8 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="w-[250px] sm:w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
-            <div className="ml-20 sm:ml-32">
+          <div className="m-auto w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
+            <div className="ml-32">
               <LocationIcon />
             </div>
             <div className="text-[#FFFFFF] mt-2">
@@ -419,8 +419,8 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="w-[250px] sm:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
-            <div className="ml-20 sm:ml-32">
+          <div className="m-auto w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
+            <div className="ml-32">
               <TweetIcon />
             </div>
             <div className="text-[#252B42] mt-2 font-semibold">
