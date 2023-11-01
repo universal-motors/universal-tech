@@ -12,9 +12,9 @@ export default function Header() {
     setMenu(!isOpen);
   };
   return (
-    <nav className="navbar" id="navbar">
+    <nav className="navbar bg-white !bg-opacity-50 py-6" id="navbar">
       <div className="flex">
-        <div className="w-[83%] m-auto flex gap-48 flex-wrap items-center justify-end">
+        <div className="w-[83%] m-auto flex gap-48 flex-wrap items-center ">
           <div>
             <svg
               width="99"
@@ -58,7 +58,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-        <div className="mr-10">
+        <div onClick={toggleMenu} className="mr-10">
           <TogglerIcon />
         </div>
       </div>
