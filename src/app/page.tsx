@@ -60,12 +60,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <DigitelDiv />
+          {/* <DigitelDiv /> */}
         </div>
       </div>
 
-      <div className="mt-[1200px] flex flex-col xl:flex-row justify-center">
-        <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[560px] xl:w-auto  justify-center p-[40px]">
+      <div className="mt-36 sm:mt-16 flex flex-col xl:flex-row justify-center">
+        <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[90%] md:w-[560px] xl:w-auto  justify-center p-[40px]">
           <div className="text-[#6486F3] text-[14px] ">
             <h3>WHO WE ARE</h3>
           </div>
@@ -92,16 +92,17 @@ export default function HomePage() {
             reality!
           </div>
         </div>
-        <div className="w-[558px] m-auto xl:m-0 h-[419px]">
+        <div className="w-[90%] m-auto md:w-[558px] xl:m-0 h-[419px]">
           <Image alt="about1" src={about1} />
         </div>
       </div>
-      {/* <WhyChooseUs />
+      <div></div>
+      <WhyChooseUs />
       <PracticeAdvise />
       <Providing />
       <Mask />
       <Getintouch />
-      <Consulting /> */}
+      <Consulting />
     </Box>
   );
 }
