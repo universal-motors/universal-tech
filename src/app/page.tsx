@@ -11,6 +11,7 @@ import WhyChooseUs from "@/components/whyChooseUs";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import about1 from "@/assets/images/about1.jpg";
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -62,12 +63,45 @@ export default function HomePage() {
           <DigitelDiv />
         </div>
       </div>
-      <WhyChooseUs />
+
+      <div className="mt-[1200px] flex flex-col xl:flex-row justify-center">
+        <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[560px] xl:w-auto  justify-center p-[40px]">
+          <div className="text-[#6486F3] text-[14px] ">
+            <h3>WHO WE ARE</h3>
+          </div>
+          <div className="text-[28px] text-[bold] text-[#012970]">
+            <h2>
+              Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
+            </h2>
+          </div>
+          <div>
+            At Expertizo, we are a passionate team of web app aficionados on a
+            mission <br />
+            to redefine digital excellence. With a keen eye for design and a
+            flair for <br />
+            innovation, we craft powerful and user-centric web applications that
+            drive <br />
+            growth and elevate brands. Our relentless pursuit of perfection and{" "}
+            <br />
+            commitment to cutting-edge technologies enable us to create
+            seamless, <br />
+            scalable, and secure web experiences. Join us on this digital
+            journey and <br />
+            unlock the true potential of your online presence. Let's turn your
+            ideas into <br />
+            reality!
+          </div>
+        </div>
+        <div className="w-[558px] m-auto xl:m-0 h-[419px]">
+          <Image alt="about1" src={about1} />
+        </div>
+      </div>
+      {/* <WhyChooseUs />
       <PracticeAdvise />
       <Providing />
       <Mask />
       <Getintouch />
-      <Consulting />
+      <Consulting /> */}
     </Box>
   );
 }
