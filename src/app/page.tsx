@@ -1,8 +1,8 @@
 "use client";
 import img from "@/assets/images/new/hero-bg.png";
 import left from "@/assets/images/new/mobile-app2.gif";
+import about1 from "@/assets/images/new/responsive.gif";
 import Consulting from "@/components/consulting";
-import DigitelDiv from "@/components/digitel";
 import Getintouch from "@/components/getintouch";
 import Mask from "@/components/mask";
 import PracticeAdvise from "@/components/practiceAdvise";
@@ -11,7 +11,6 @@ import WhyChooseUs from "@/components/whyChooseUs";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import about1 from "@/assets/images/about1.jpg";
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
