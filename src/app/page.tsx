@@ -103,7 +103,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-28">
-        <div className="flex flex-col justify-center  lg:ml-5 text-center items-center  group  w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#2DB6FA] hover:text-[#ffffff]">
+        <div className="flex flex-col justify-center border-b-4 border-[#2DB6FA] lg:ml-5 text-center items-center  group  w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#2DB6FA] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#2DB6FA]  group-hover:bg-[#ffffff] bg-[#2DB6FA]/40 rounded-lg">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
             <div>technology and design.</div>
           </div>
         </div>
-        <div className="flex flex-col  lg:mr-1 justify-center text-center group items-center w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F68C09] hover:text-[#ffffff]">
+        <div className="flex flex-col  lg:mr-1 justify-center text-center group border-b-4 border-[#F68C09] items-center w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F68C09] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#F68C09]  group-hover:bg-[#ffffff] bg-[#F68C09]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
             <div>development.</div>
           </div>
         </div>
-        <div className="flex flex-col justify-center  lg:mr-5 text-center items-center group w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#08DA4E] hover:text-[#ffffff]">
+        <div className="flex flex-col justify-center  lg:mr-5 text-center items-center border-b-4 border-[#08DA4E]  group w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#08DA4E] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#08DA4E]  group-hover:bg-[#ffffff] bg-[#08DA4E]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-8">
-        <div className="flex flex-col justify-center  text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#E9222C] hover:text-[#ffffff]">
+        <div className="flex flex-col justify-center  text-center items-center  border-b-4 border-[#E9222C]  group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#E9222C] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#E9222C]  group-hover:bg-[#ffffff] bg-[#E9222C]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -154,7 +154,7 @@ export default function HomePage() {
             <div>graphic designs.</div>
           </div>
         </div>
-        <div className="flex flex-col justify-center text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#B50EDF] hover:text-[#ffffff]">
+        <div className="flex flex-col justify-center text-center items-center group  border-b-4 border-[#B50EDF] w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#B50EDF] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#B50EDF]  group-hover:bg-[#ffffff] bg-[#B50EDF]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -164,8 +164,11 @@ export default function HomePage() {
             <div>comprehensive training. Code, design, and</div>
             <div>deploy with expert guidance.</div>
           </div>
+          <button className="text-[#B50EDF] group-hover:text-[#ffffff] font-semibold mt-10">
+            More Info
+          </button>
         </div>
-        <div className="flex flex-col justify-center  text-center  items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F51F9C] hover:text-[#ffffff]">
+        <div className="flex flex-col justify-center  text-center  items-center group border-b-4 border-[#F51F9C] w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F51F9C] hover:text-[#ffffff]">
           <div className="w-20 h-20 pt-7 text-[#F51F9C]  group-hover:bg-[#ffffff] bg-[#F51F9C]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -175,6 +178,9 @@ export default function HomePage() {
             <div>for training programs, meetings, conferances,</div>
             <div>workshops & other events</div>
           </div>
+          <button className="text-[#F51F9C] group-hover:text-[#ffffff] font-semibold mt-10">
+            More Info
+          </button>
         </div>
       </div>
 
