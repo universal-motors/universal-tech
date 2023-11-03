@@ -12,6 +12,10 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import PlaceIcon from "@mui/icons-material/Place";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -199,6 +203,121 @@ export default function HomePage() {
           <button className="text-[#F51F9C] group-hover:text-[#ffffff] font-semibold mt-10">
             More Info
           </button>
+        </div>
+      </div>
+      <div className="mt-10 m-auto w-[90%]">
+        <div className="text-center">
+          <div className="text-[#4154F1] font-bold">CONTACT</div>
+          <div className="text-[#012970] text-[38px] font-bold">
+            Let's start a conversation
+          </div>
+        </div>
+        <div className="flex flex-col xl:flex-row  justify-center items-center m-auto ">
+          <div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 m-auto items-center">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div>
+                  <PlaceIcon sx={{ fontSize: "70px", color: "#485BF2" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#012970] font-bold text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[#444444]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[#444444]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <AccessTimeIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#012970] font-bold text-[20px]">
+                    Open Hours
+                  </div>
+                  <div className="text-[#444444]">Monday - Friday</div>
+                  <div className="text-[#444444]">9:00AM - 05:00PM</div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row  justify-center gap-4 items-center m-auto mt-3">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <MailOutlineIcon
+                    sx={{ fontSize: "50px", color: "#485BF2" }}
+                  />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#012970] font-bold text-[20px]">
+                    Email Us
+                  </div>
+                  <div className="text-[#444444]">info@expertizo.pk</div>
+                </div>
+              </div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <PhoneIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#012970] font-bold text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[#444444]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[#444444]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
+            <div className="flex flex-col md:flex-row gap-5 ">
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5"
+                  type="text"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div className="m-4">
+              <input
+                className="w-[90%] sm:w-[276px] md:w-[576px] h-[43px] border pl-5"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+            <div>
+              <label>
+                <textarea
+                  className="border m-auto w-[90%] md:w-[576px] h-[152px] pl-5 pt-3"
+                  id=""
+                  name="message"
+                  rows="4"
+                  cols="50"
+                  placeholder="Message"
+                ></textarea>
+              </label>
+            </div>
+            <div className="m-4 ">
+              <button className="border  w-[166px] h-[44px] rounded bg-[#485BF2] hover:bg-[#5969F3] text-[#ffffff]">
+                Send Message
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
