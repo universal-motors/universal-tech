@@ -303,11 +303,8 @@ export default function HomePage() {
             <div>
               <label>
                 <textarea
-                  className="border m-auto w-[90%] md:w-[576px] h-[152px] pl-5 pt-3"
-                  id=""
+                  className="border w-[190px] sm:w-[276px]  md:w-[576px] h-[152px] mr sm:m-0 pl-5 pt-3"
                   name="message"
-                  rows="4"
-                  cols="50"
                   placeholder="Message"
                 ></textarea>
               </label>
