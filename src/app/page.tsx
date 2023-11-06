@@ -17,6 +17,14 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 export default function HomePage() {
+  const people = [
+    {
+      name: "Leslie Alexander",
+      role: "Co-Founder / CEO",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  ];
   return (
     <Box sx={{ width: "100%" }}>
       <div className="relative w-full h-[90vh]">
@@ -63,8 +71,6 @@ export default function HomePage() {
               <Image src={left} alt="my gif" height={500} width={500} />
             </div>
           </div>
-
-          {/* <DigitelDiv /> */}
         </div>
       </div>
 
@@ -220,13 +226,13 @@ export default function HomePage() {
                   <PlaceIcon sx={{ fontSize: "70px", color: "#485BF2" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[20px]">
+                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
                     Address
                   </div>
-                  <div className="text-[#444444]">
+                  <div className="text-[12px] sm:text-[14px] text-[#444444]">
                     Office No. 5, Mazhar Arcade
                   </div>
-                  <div className="text-[#444444]">
+                  <div className="text-[12px] sm:text-[14px]">
                     Bahadurabad Karachi, Pakistan
                   </div>
                 </div>
@@ -236,11 +242,15 @@ export default function HomePage() {
                   <AccessTimeIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[20px]">
+                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
                     Open Hours
                   </div>
-                  <div className="text-[#444444]">Monday - Friday</div>
-                  <div className="text-[#444444]">9:00AM - 05:00PM</div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Monday - Friday
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    9:00AM - 05:00PM
+                  </div>
                 </div>
               </div>
             </div>
@@ -252,10 +262,12 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[20px]">
+                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]]">
                     Email Us
                   </div>
-                  <div className="text-[#444444]">info@expertizo.pk</div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    info@expertizo.pk
+                  </div>
                 </div>
               </div>
               <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
@@ -263,31 +275,31 @@ export default function HomePage() {
                   <PhoneIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[20px]">
+                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
                     Address
                   </div>
-                  <div className="text-[#444444]">
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
                     Office No. 5, Mazhar Arcade
                   </div>
-                  <div className="text-[#444444]">
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
                     Bahadurabad Karachi, Pakistan
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
+          <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] pt-6 md:pt-0 mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
             <div className="flex flex-col md:flex-row gap-5 ">
               <div>
                 <input
-                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5"
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
                   type="text"
                   placeholder="Your Name"
                 />
               </div>
               <div>
                 <input
-                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5"
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
                   type="text"
                   placeholder="Your Email"
                 />
@@ -295,7 +307,7 @@ export default function HomePage() {
             </div>
             <div className="m-4">
               <input
-                className="w-[90%] sm:w-[276px] md:w-[576px] h-[43px] border pl-5"
+                className="w-[90%] sm:w-[276px] md:w-[576px] h-[43px] border pl-5 text-[14px]"
                 type="text"
                 placeholder="Subject"
               />
@@ -303,7 +315,7 @@ export default function HomePage() {
             <div>
               <label>
                 <textarea
-                  className="border w-[190px] sm:w-[276px]  md:w-[576px] h-[152px] mr sm:m-0 pl-5 pt-3"
+                  className="border w-[190px] sm:w-[276px]  md:w-[576px] h-[152px] mr sm:m-0 pl-5 pt-3 text-[14px]"
                   name="message"
                   placeholder="Message"
                 ></textarea>
@@ -315,6 +327,44 @@ export default function HomePage() {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Meet our leadership
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
+              vitae elementum enim vitae ullamcorper suspendisse.
+            </p>
+          </div>
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            {people.map((person) => (
+              <li key={person.name}>
+                <div className="flex items-center gap-x-6">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={person.imageUrl}
+                    alt=""
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                      {person.name}
+                    </h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                      {person.role}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
