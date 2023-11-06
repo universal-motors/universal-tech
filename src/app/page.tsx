@@ -53,7 +53,7 @@ export default function HomePage() {
                 <div className="relative mt-10 ">
                   <Link
                     href="#"
-                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#4154F1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#4154F1] pt-4 sm:pt-[12px] hover:border-[#4154F1]  rounded-full"
+                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1]  rounded-full"
                   >
                     Get Quote Now
                   </Link>
@@ -69,10 +69,10 @@ export default function HomePage() {
 
       <div className="mt-36 sm:mt-16 flex flex-col xl:flex-row justify-center">
         <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[90%] md:w-[560px] xl:w-auto  justify-center p-[40px]">
-          <div className="text-[#6486F3] text-[14px] ">
+          <div className="text-[#00A0C1] text-[14px] ">
             <h3>WHO WE ARE</h3>
           </div>
-          <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-[#012970]">
+          <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-black]">
             <h2>
               Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
             </h2>
@@ -100,8 +100,8 @@ export default function HomePage() {
         </div>
       </div>
       <div className="text-center font-bold mt-40">
-        <div className="text-[#5061F2]">WHAT WE OFFER</div>
-        <div className="text-[#012970] !text-[20px] md:!text-[38px] font-bold">
+        <div className="text-[#00A0C1]">WHAT WE OFFER</div>
+        <div className="text-black !text-[20px] md:!text-[38px] font-bold">
           Comprehensive Services and Solutions
         </div>
       </div>
@@ -206,8 +206,8 @@ export default function HomePage() {
       </div>
       <div className="mt-10 m-auto w-[90%]">
         <div className="text-center">
-          <div className="text-[#4154F1] font-bold">CONTACT</div>
-          <div className="text-[#012970] text-[25px] sm:text-[38px] font-bold">
+          <div className="text-[#00A0C1] font-bold">CONTACT</div>
+          <div className="text-black text-[25px] sm:text-[38px] font-bold">
             Let's start a conversation
           </div>
         </div>
@@ -216,10 +216,10 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 m-auto items-center">
               <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
                 <div>
-                  <PlaceIcon sx={{ fontSize: "70px", color: "#485BF2" }} />
+                  <PlaceIcon sx={{ fontSize: "70px", color: "#00A0C1" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
                     Address
                   </div>
                   <div className="text-[12px] sm:text-[14px] text-[#444444]">
@@ -232,10 +232,10 @@ export default function HomePage() {
               </div>
               <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
                 <div className="ml-5">
-                  <AccessTimeIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
+                  <AccessTimeIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
                     Open Hours
                   </div>
                   <div className="text-[#444444] text-[12px] sm:text-[14px]">
@@ -251,11 +251,11 @@ export default function HomePage() {
               <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
                 <div className="ml-5">
                   <MailOutlineIcon
-                    sx={{ fontSize: "50px", color: "#485BF2" }}
+                    sx={{ fontSize: "50px", color: "#00A0C1" }}
                   />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]]">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]]">
                     Email Us
                   </div>
                   <div className="text-[#444444] text-[12px] sm:text-[14px]">
@@ -265,10 +265,10 @@ export default function HomePage() {
               </div>
               <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
                 <div className="ml-5">
-                  <PhoneIcon sx={{ fontSize: "50px", color: "#485BF2" }} />
+                  <PhoneIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
                 </div>
                 <div className="ml-5 mt-5">
-                  <div className="text-[#012970] font-bold text-[14px] sm:text-[20px]">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
                     Address
                   </div>
                   <div className="text-[#444444] text-[12px] sm:text-[14px]">
@@ -315,7 +315,7 @@ export default function HomePage() {
               </label>
             </div>
             <div className="m-4 ">
-              <button className="border  w-[166px] h-[44px] rounded bg-[#485BF2] hover:bg-[#5969F3] text-[#ffffff]">
+              <button className="border  w-[166px] h-[44px] rounded bg-[#00A0C1] hover:bg-[#FAFBFF] hover:text-[#00A0C1] hover:border-[#00A0C1] text-[#ffffff]">
                 Send Message
               </button>
             </div>
@@ -323,7 +323,6 @@ export default function HomePage() {
         </div>
       </div>
       <Leadership />
-
       <WhyChooseUs />
       <PracticeAdvise />
       <Providing />
