@@ -8,11 +8,15 @@ export default function WhyChooseUs() {
   return (
     <div>
       <div className="text-center">
-        <div className="font-bold text-[40px]  ">WHY CHOOSE US</div>
-        <div>
-          Problems trying to resolve the conflict between the two major realms
+        <div className="font-bold !text-[30px] sm:!text-[40px]  ">
+          WHY CHOOSE US
         </div>
-        <div>of Classical physics: Newtonian mechanics</div>
+        <div className="text-[12px] sm:text-[14px]">
+          <div>
+            Problems trying to resolve the conflict between the two major realms
+          </div>
+          <div>of Classical physics: Newtonian mechanics</div>
+        </div>
       </div>
       <div className="flex flex-wrap gap-y-2 justify-center mt-[50px]">
         <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px]  flex flex-col items-center justify-center">
