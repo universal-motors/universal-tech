@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
   return (
     <div>
       <div className="text-center">
-        <div className="font-bold text-[40px]  ">WHY CHOOSE US</div>
+        <div className="font-bold text-[40px] mt-24 ">WHY CHOOSE US</div>
         <div>
           Problems trying to resolve the conflict between the two major realms
         </div>

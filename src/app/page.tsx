@@ -12,6 +12,9 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import setUs from "@/assets/images/123.png";
+import DoneIcon from "@mui/icons-material/Done";
+
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -66,7 +69,7 @@ export default function HomePage() {
 
       <div className="mt-36 sm:mt-16 flex flex-col xl:flex-row justify-center">
         <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[90%] md:w-[560px] xl:w-auto  justify-center p-[40px]">
-          <div className="text-[#6486F3] text-[14px] ">
+          <div className="text-cyan-500 text-[14px] ">
             <h3>WHO WE ARE</h3>
           </div>
           <div className="text-[28px] text-[bold] text-[#012970]">
@@ -97,7 +100,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="text-center font-bold mt-40">
-        <div className="text-[#5061F2]">WHAT WE OFFER</div>
+        <div className="text-cyan-500">WHAT WE OFFER</div>
         <div className="text-[#012970] text-[38px] font-bold">
           Comprehensive Services and Solutions
         </div>
@@ -174,6 +177,76 @@ export default function HomePage() {
             <div>We provide well designed & equipped spaces</div>
             <div>for training programs, meetings, conferances,</div>
             <div>workshops & other events</div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-24">
+        <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
+          core values
+        </div>
+        <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
+          What Sets Us Apart.
+        </div>
+      </div>
+      <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
+        <div className="w-[90%] sm:w-[456px] h-[290px] ">
+          <Image alt="setUs" src={setUs} />
+        </div>
+        <div className="flex  flex-col  items-start ">
+          <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+              <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+
+              <div>Innovation</div>
+            </div>
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+              <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Commitment</div>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+              <div className="border bg-[#d6eaf8]  rounded hover:bg-blue-700 mr-3 ">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Goals</div>
+            </div>
+            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4">
+              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Team Work</div>
+            </div>
+          </div>
+          <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Responsibility</div>
+            </div>
+            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Satisfaction</div>
+            </div>
           </div>
         </div>
       </div>

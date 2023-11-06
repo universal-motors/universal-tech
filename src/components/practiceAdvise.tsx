@@ -9,7 +9,7 @@ export default function PracticeAdvise() {
   return (
     <div>
       <div className="text-center mt-12">
-        <div className="font-bold text-[40px] mt-[50px]">Practice Advice</div>
+        <div className="font-bold text-[40px] mt-24">Practice Advice</div>
         <div>Problems trying to resolve the conflict between</div>
         <div>
           the two major realms of Classical physics: Newtonian mechanics

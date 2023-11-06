@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Providing() {
   return (
-    <div className="mt-[300px]">
+    <div className="mt-24">
       <div className="text-center">
-        <div className="text-[40px] font-bold ">
+        <div className="text-[40px] font-bold">
           <h2>
             We are providing best <br />
             business service.
