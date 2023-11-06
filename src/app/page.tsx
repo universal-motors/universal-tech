@@ -62,8 +62,6 @@ export default function HomePage() {
               <Image src={left} alt="my gif" height={500} width={500} />
             </div>
           </div>
-
-          {/* <DigitelDiv /> */}
         </div>
       </div>
 
