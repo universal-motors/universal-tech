@@ -201,7 +201,7 @@ export default function HomePage() {
 
               <div>Innovation</div>
             </div>
-            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
               <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
                 <DoneIcon
                   sx={{ color: "black", ":hover": { color: "white" } }}
@@ -219,7 +219,7 @@ export default function HomePage() {
               </div>
               <div>Goals</div>
             </div>
-            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
               <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
                 <DoneIcon
                   sx={{ color: "black", ":hover": { color: "white" } }}
