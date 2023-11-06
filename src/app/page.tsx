@@ -16,15 +16,8 @@ import PlaceIcon from "@mui/icons-material/Place";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
+import Leadership from "@/components/leadership";
 export default function HomePage() {
-  const people = [
-    {
-      name: "Leslie Alexander",
-      role: "Co-Founder / CEO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  ];
   return (
     <Box sx={{ width: "100%" }}>
       <div className="relative w-full h-[90vh]">
@@ -60,7 +53,7 @@ export default function HomePage() {
                 <div className="relative mt-10 ">
                   <Link
                     href="#"
-                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1] text-white rounded-full"
+                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#4154F1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#4154F1] pt-4 sm:pt-[12px] hover:border-[#4154F1]  rounded-full"
                   >
                     Get Quote Now
                   </Link>
@@ -79,7 +72,7 @@ export default function HomePage() {
           <div className="text-[#6486F3] text-[14px] ">
             <h3>WHO WE ARE</h3>
           </div>
-          <div className="text-[28px] text-[bold] text-[#012970]">
+          <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-[#012970]">
             <h2>
               Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
             </h2>
@@ -108,7 +101,7 @@ export default function HomePage() {
       </div>
       <div className="text-center font-bold mt-40">
         <div className="text-[#5061F2]">WHAT WE OFFER</div>
-        <div className="text-[#012970] text-[38px] font-bold">
+        <div className="text-[#012970] !text-[20px] md:!text-[38px] font-bold">
           Comprehensive Services and Solutions
         </div>
       </div>
@@ -214,7 +207,7 @@ export default function HomePage() {
       <div className="mt-10 m-auto w-[90%]">
         <div className="text-center">
           <div className="text-[#4154F1] font-bold">CONTACT</div>
-          <div className="text-[#012970] text-[38px] font-bold">
+          <div className="text-[#012970] text-[25px] sm:text-[38px] font-bold">
             Let's start a conversation
           </div>
         </div>
@@ -329,44 +322,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Meet our leadership
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
-              vitae elementum enim vitae ullamcorper suspendisse.
-            </p>
-          </div>
-          <ul
-            role="list"
-            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-          >
-            {people.map((person) => (
-              <li key={person.name}>
-                <div className="flex items-center gap-x-6">
-                  <img
-                    className="h-16 w-16 rounded-full"
-                    src={person.imageUrl}
-                    alt=""
-                  />
-                  <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                      {person.name}
-                    </h3>
-                    <p className="text-sm font-semibold leading-6 text-indigo-600">
-                      {person.role}
-                    </p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <Leadership />
 
       <WhyChooseUs />
       <PracticeAdvise />
