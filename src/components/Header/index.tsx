@@ -53,10 +53,10 @@ export default function Header() {
             >
               <CustomLink text="Home" to="home" />
               <CustomLink text="About us" to="product" />
-              <CustomLink text="services" to="services" />
-              <CustomLink text="portfolio" to="portfolio" />
-              <CustomLink text="team" to="team" />
-              <CustomLink text="contact us" to="contact us" />
+              <CustomLink text="Services" to="services" />
+              <CustomLink text="Portfolio" to="portfolio" />
+              <CustomLink text="Team" to="team" />
+              <CustomLink text="Contact us" to="contact us" />
             </ul>
           </div>
         </div>
