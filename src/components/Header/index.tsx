@@ -12,7 +12,10 @@ export default function Header() {
     setMenu(!isOpen);
   };
   return (
-    <nav className="navbar bg-white !bg-opacity-80 py-6" id="navbar">
+    <nav
+      className="navbar bg-white backdrop-blur !bg-opacity-30 py-6"
+      id="navbar"
+    >
       <div className="flex">
         <div className="w-[83%] m-auto flex gap-48 flex-wrap items-center ">
           <div>
