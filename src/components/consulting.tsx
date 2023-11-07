@@ -10,7 +10,7 @@ import React from "react";
 export default function Consulting() {
   return (
     <div>
-      <div className=" flex  justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
+      {/* <div className=" flex  justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
         <div>
           <div className="font-bold text-[24px]">
             Consulting Agency For Your Business
@@ -24,7 +24,7 @@ export default function Consulting() {
             Contact Us
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="flex flex-col xl:flex-row  xl:justify-center pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
         <div className="mr-40">

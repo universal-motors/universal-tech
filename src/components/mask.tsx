@@ -8,28 +8,28 @@ import React from "react";
 
 export default function Mask() {
   return (
-    <div className="bg-[#FAFAFA] flex-wrap mt-20">
-      <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-0  flex-col sm:flex-row flex justify-evenly items-center flex-wrap gap-5">
-        <div className="mt-20">
+    <div className="bg-[#FAFAFA] flex-wrap  ">
+      <div className="bg-[#FAFAFA] w-[1440] h-[300px] ml-0  flex-col sm:flex-row flex  justify-center items-center flex-wrap gap-40">
+        <div className="">
           <HooliIcon />
         </div>
-        <div className="mt-20">
+        <div className="">
           <LyftIcon />
         </div>
-        <div className="mt-20">
+        <div className="">
           <LeaveIcon />
         </div>
-        <div className="mt-20">
+        <div className="">
           <StripeIcon />
         </div>
-        <div className="mt-20">
+        <div className="">
           <Awsicon />
         </div>
-        <div className="mt-20">
+        <div className="">
           <MaskIcon />
         </div>
       </div>
-      <div className="relative w-full h-[300px]">
+      {/* <div className="relative w-full h-[300px]">
         <div className="flex justify-center h-[100px] flex-wrap bg-none xl:bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
         <div className="absolute bottom-14 w-full flex-wrap justify-start flex lg:justify-center">
           <div className="bg-[#16697A] m-auto w-[320px] sm:w-[500px] md:w-[70%] h-[220px] sm:h-[220px] md:h-[200px] lg:h-[180px] xl:h-[124px] flex-wrap flex justify-between pt-6 pl-10 pr-10  ">
@@ -55,7 +55,7 @@ export default function Mask() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

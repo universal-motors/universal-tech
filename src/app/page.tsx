@@ -12,6 +12,11 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import PlaceIcon from "@mui/icons-material/Place";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
+import Leadership from "@/components/leadership";
 import setUs from "@/assets/images/123.png";
 import DoneIcon from "@mui/icons-material/Done";
 
@@ -51,7 +56,7 @@ export default function HomePage() {
                 <div className="relative mt-10 ">
                   <Link
                     href="#"
-                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1] text-white rounded-full"
+                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1]  rounded-full"
                   >
                     Get Quote Now
                   </Link>
@@ -70,7 +75,7 @@ export default function HomePage() {
           <div className="text-cyan-500 text-[14px] ">
             <h3>WHO WE ARE</h3>
           </div>
-          <div className="text-[28px] text-[bold] text-[#012970]">
+          <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-black]">
             <h2>
               Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
             </h2>
@@ -98,8 +103,8 @@ export default function HomePage() {
         </div>
       </div>
       <div className="text-center font-bold mt-40">
-        <div className="text-cyan-500">WHAT WE OFFER</div>
-        <div className="text-[#012970] text-[38px] font-bold">
+        <div className="text-[#00A0C1]">WHAT WE OFFER</div>
+        <div className="text-black !text-[20px] md:!text-[38px] font-bold">
           Comprehensive Services and Solutions
         </div>
       </div>
@@ -178,57 +183,203 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="mt-24">
-        <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
-          core values
+      <div>
+        <div className="mt-24">
+          <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
+            core values
+          </div>
+          <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
+            What Sets Us Apart.
+          </div>
         </div>
-        <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
-          What Sets Us Apart.
+        <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
+          <div className="w-[90%] sm:w-[456px] h-[290px] ">
+            <Image alt="setUs" src={setUs} />
+          </div>
+          <div className="flex  flex-col  items-start ">
+            <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+                <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+
+                <div>Innovation</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Commitment</div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px]  font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4">
+                <div className="border bg-[#d6eaf8]  rounded  hover:bg-blue-700 mr-3 ">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Goals</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Team Work</div>
+              </div>
+            </div>
+            <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Responsibility</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Satisfaction</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
-        <div className="w-[90%] sm:w-[456px] h-[290px] ">
-          <Image alt="setUs" src={setUs} />
-        </div>
-        <div className="flex  flex-col  items-start ">
-          <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
-            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
-              <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
-                <DoneIcon
-                  sx={{ color: "black", ":hover": { color: "white" } }}
-                />
-              </div>
 
-              <div>Innovation</div>
-            </div>
-            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
-              <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
-                <DoneIcon
-                  sx={{ color: "black", ":hover": { color: "white" } }}
-                />
+      <Leadership />
+      <WhyChooseUs />
+      <PracticeAdvise />
+      <Providing />
+      <Mask />
+      <Getintouch />
+      <div className="mt-10 m-auto w-[90%] mb-10">
+        <div className="text-center">
+          <div className="text-[#00A0C1] font-bold">CONTACT</div>
+          <div className="text-black text-[25px] sm:text-[38px] font-bold">
+            Let's start a conversation
+          </div>
+        </div>
+        <div className="flex flex-col xl:flex-row  justify-center items-center m-auto ">
+          <div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 m-auto items-center">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div>
+                  <PlaceIcon sx={{ fontSize: "70px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[12px] sm:text-[14px] text-[#444444]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[12px] sm:text-[14px]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
               </div>
-              <div>Commitment</div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <AccessTimeIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Open Hours
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Monday - Friday
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    9:00AM - 05:00PM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row  justify-center gap-4 items-center m-auto mt-3">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <MailOutlineIcon
+                    sx={{ fontSize: "50px", color: "#00A0C1" }}
+                  />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]]">
+                    Email Us
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    info@expertizo.pk
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <PhoneIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
-            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
-              <div className="border bg-[#d6eaf8]  rounded hover:bg-blue-700 mr-3 ">
-                <DoneIcon
-                  sx={{ color: "black", ":hover": { color: "white" } }}
+          <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] pt-6 md:pt-0 mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
+            <div className="flex flex-col md:flex-row gap-5 ">
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
+                  type="text"
+                  placeholder="Your Name"
                 />
               </div>
-              <div>Goals</div>
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
+                  type="text"
+                  placeholder="Your Email"
+                />
+              </div>
             </div>
-            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
-              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
-                <DoneIcon
-                  sx={{ color: "black", ":hover": { color: "white" } }}
-                />
-              </div>
-              <div>Team Work</div>
+            <div className="m-4">
+              <input
+                className="w-[90%] sm:w-[276px] md:w-[576px] h-[43px] border pl-5 text-[14px]"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+            <div>
+              <label>
+                <textarea
+                  className="border w-[163px] sm:w-[276px]  md:w-[576px] h-[152px] mr-5 sm:mr-0 sm:m-0 pl-5 pt-3 text-[14px]"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </label>
+            </div>
+            <div className="m-3 mr-8">
+              <button className="border  w-[166px] h-[44px] rounded bg-[#00A0C1] hover:bg-[#16697A]  hover:border-[#00A0C1] text-[#ffffff]">
+                Send Message
+              </button>
             </div>
           </div>
-          <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+        </div>
+        {/* <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
             <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
               <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
                 <DoneIcon
@@ -245,15 +396,80 @@ export default function HomePage() {
               </div>
               <div>Satisfaction</div>
             </div>
+          </div> */}
+        {/* <div>
+             <div className="mt-24">
+          <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
+            core values
+          </div>
+          <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
+            What Sets Us Apart.
           </div>
         </div>
-      </div>
+        <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
+          <div className="w-[90%] sm:w-[456px] h-[290px] ">
+            <Image alt="setUs" src={setUs} />
+          </div>
+          <div className="flex  flex-col  items-start ">
+            <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+                <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
 
-      <WhyChooseUs />
-      <PracticeAdvise />
-      <Providing />
-      <Mask />
-      <Getintouch />
+                <div>Innovation</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Commitment</div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px]  font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4">
+                <div className="border bg-[#d6eaf8]  rounded  hover:bg-blue-700 mr-3 ">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Goals</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Team Work</div>
+              </div>
+            </div>
+            <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Responsibility</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div> */}
+      </div>
       <Consulting />
     </Box>
   );
