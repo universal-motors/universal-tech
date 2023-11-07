@@ -19,6 +19,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import Leadership from "@/components/leadership";
 import setUs from "@/assets/images/123.png";
 import DoneIcon from "@mui/icons-material/Done";
+import Setusapart from "./dashboard/components/Setusapart";
+import bistrochat from "src/assets/images/bistroChat.png";
 
 export default function HomePage() {
   return (
@@ -183,75 +185,78 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="mt-24">
+      <Setusapart />
+
+      <div className="m-auto flex flex-col justify-center items-center">
+        <div className="mt-40 ">
           <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
-            core values
+            PORTFOLIO
           </div>
-          <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
-            What Sets Us Apart.
+          <div className=" text-[28px] sm:text-[30px] md:text-[38px] font-bold flex justify-center text-[#012970]">
+            Check our latest work
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
-          <div className="w-[90%] sm:w-[456px] h-[290px] ">
-            <Image alt="setUs" src={setUs} />
+        <div className="font-semibold flex justify-center items-center gap-14 mt-10 mb-10">
+          <div>
+            <button className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500">
+              All
+            </button>{" "}
           </div>
-          <div className="flex  flex-col  items-start ">
-            <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
-              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
-                <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-
-                <div>Innovation</div>
-              </div>
-              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
-                <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-                <div>Commitment</div>
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
-              <div className=" text-[#012970] text-[18px]  font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4">
-                <div className="border bg-[#d6eaf8]  rounded  hover:bg-blue-700 mr-3 ">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-                <div>Goals</div>
-              </div>
-              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
-                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-                <div>Team Work</div>
-              </div>
-            </div>
-            <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
-              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
-                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-                <div>Responsibility</div>
-              </div>
-              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
-                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
-                  <DoneIcon
-                    sx={{ color: "black", ":hover": { color: "white" } }}
-                  />
-                </div>
-                <div>Satisfaction</div>
-              </div>
-            </div>
+          <div>
+            <button className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500">
+              {" "}
+              App{" "}
+            </button>{" "}
+          </div>
+          <div>
+            {" "}
+            <button className="rounded-full border w-[70px] h-[40px] hover:border-cyan-500 hover:text-cyan-500">
+              Web
+            </button>{" "}
+          </div>
+        </div>
+        <div className="flex-wrap  flex-row flex justify-center items-center m-auto gap-5">
+          <div className="flex justify-center items-center m-auto w-[90%] sm:w-[450px] h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+        </div>
+        <div className="flex justify-center flex-wrap items-center gap-5 mt-5">
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+        </div>
+        <div className="flex  justify-center flex-wrap  items-center gap-5 mt-5">
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+        </div>
+        <div className="flex justify-center flex-wrap  items-center gap-5 mt-5">
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border">
+            <Image alt="bistroChat" src={bistrochat} />
+          </div>
+          <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
+            <Image alt="bistroChat" src={bistrochat} />
           </div>
         </div>
       </div>
@@ -470,6 +475,7 @@ export default function HomePage() {
         </div>
           </div> */}
       </div>
+
       <Consulting />
     </Box>
   );
