@@ -428,7 +428,6 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-
         </div>
         {/* <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
             <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
@@ -517,9 +516,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          </div>
         </div>
-        <Consulting />
+      </div>
+      <Consulting />
     </Box>
   );
 }
