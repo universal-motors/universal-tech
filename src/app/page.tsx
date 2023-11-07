@@ -1,38 +1,25 @@
 "use client";
-import image from "@/assets/images/card-item.png";
-import img from "@/assets/images/cover.png";
-import img3 from "@/assets/images/media.png";
-import img2 from "@/assets/images/organize.png";
-import img4 from "@/assets/images/work.png";
-import AwardIcon from "@/assets/svg2/award";
-import CasesIcon from "@/assets/svg2/cases";
-import HappyIcon from "@/assets/svg2/happy";
-import SourceIcon from "@/assets/svg2/source";
-import ThreeIcon from "@/assets/svg2/three";
-import Awsicon from "@/assets/svgs/aws";
-import BagIcon from "@/assets/svgs/bag";
-import CallIcon from "@/assets/svgs/call";
-import DigitalIcon from "@/assets/svgs/digital";
-import FacebookIcon from "@/assets/svgs/facebook";
-import FirmIcon from "@/assets/svgs/firmIcon";
-import HooliIcon from "@/assets/svgs/hooli";
-import InstagramIcon from "@/assets/svgs/instagram";
-import LeaveIcon from "@/assets/svgs/leave";
-import LocationIcon from "@/assets/svgs/location";
-import Location2Icon from "@/assets/svgs/location2";
-import LyftIcon from "@/assets/svgs/lyft";
-import MaskIcon from "@/assets/svgs/mask";
-import PhoneIcon from "@/assets/svgs/phone";
-import QuickIcon from "@/assets/svgs/quick";
-import Quick2Icon from "@/assets/svgs/quick2";
-import StripeIcon from "@/assets/svgs/stripe";
-import TweetIcon from "@/assets/svgs/tweet";
-import Tweeter2Icon from "@/assets/svgs/tweeter2";
-import Tweeter3Icon from "@/assets/svgs/tweeter3";
-import YoutubeIcon from "@/assets/svgs/youtube";
+import img from "@/assets/images/new/hero-bg.png";
+import left from "@/assets/images/new/mobile-app2.gif";
+import about1 from "@/assets/images/new/responsive.gif";
+import Consulting from "@/components/consulting";
+import Getintouch from "@/components/getintouch";
+import Mask from "@/components/mask";
+import PracticeAdvise from "@/components/practiceAdvise";
+import Providing from "@/components/providing";
+import WhyChooseUs from "@/components/whyChooseUs";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import PlaceIcon from "@mui/icons-material/Place";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
+import Leadership from "@/components/leadership";
+import setUs from "@/assets/images/123.png";
+import DoneIcon from "@mui/icons-material/Done";
+
 export default function HomePage() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -48,483 +35,442 @@ export default function HomePage() {
           }}
         />
         <div className="absolute w-full">
-          <div className="grid grid-cols-1 mt-40 ml-40">
-            <h1 className="text-black font-extrabold text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
-              EMPOWER <br />
-              YOUR BUSINESS
-              <span
-                className="typewrite relative text-type-element"
-                id="typed"
-                data-period="2000"
-                data-type='[ "Business", "Startups", "Digital Agency", "Marketing" ]'
-              ></span>
-            </h1>
-            <p className="text-[#737373] text-[30px]  mb-0 max-w-2xl text-lg">
-              we know how large objects will act, <br />
-              but thing on a small scale
-            </p>
-          </div>
-          <div className="flex ml-40 gap-6">
-            <div className="relative mt-10 ">
-              <Link
-                href="#"
-                className="w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] hover:text-[#00A0C1] pt-[12px] hover:border-[#00A0C1] text-[#FFFFFF] rounded-full"
-              >
-                Get Quote Now
-              </Link>
+          <div className="flex items-center flex-col gap-10 md:gap-0 md:flex-row justify-center md:justify-between mt-40 w-[75%] m-auto">
+            <div>
+              <div className="grid grid-cols-1 ">
+                <h1 className="text-black font-extrabold text-[30px] sm:text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
+                  We offer modern solutions <br /> for growing your business
+                  <span
+                    className="typewrite relative text-type-element"
+                    id="typed"
+                    data-period="2000"
+                    data-type='[ "Business", "Startups", "Digital Agency", "Marketing" ]'
+                  ></span>
+                </h1>
+                <p className="text-[#737373] text-[30px]  mb-0 max-w-2xl text-lg">
+                  We help businesses digitally transform, build new products,
+                  and accelerate digital teams. Contact Us
+                </p>
+              </div>
+              <div className="flex gap-6">
+                <div className="relative mt-10 ">
+                  <Link
+                    href="#"
+                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1]  rounded-full"
+                  >
+                    Get Quote Now
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="relative mt-10">
-              <Link
-                href="#"
-                className="w-[185px] h-[48px]  btn bg-[#E7EBEE] hover:bg-[#00A0C1] border-[#00A0C1] pt-[12px] hover:text-[#FFFFFF] text-[#00A0C1] rounded-full"
-              >
-                Learn More
-              </Link>
+            <div>
+              <Image src={left} alt="my gif" height={500} width={500} />
             </div>
           </div>
-          <div className="flex justify-center mt-[180px]">
-            <div className="bg-[#FFFFFF] w-[328px] h-[210px]  mr-[40px] flex flex-col  justify-center  pl-[40px] shadow-xl">
-              <div>
-                <BagIcon />
-              </div>
-              <div className="text-[24px] font-bold mt-[20px]">
-                <h1>Digital Marketing</h1>
-              </div>
-              <div>
-                <p className="text-[#737373] text-[14px]">
-                  We focus on ergonomics and <br />
-                  meeting you where you work.
-                </p>
-              </div>
-            </div>
-            <div className="bg-[#FFFFFF] w-[328px] h-[210px] mr-[40px]  flex flex-col  justify-center pl-[40px] shadow-xl ">
-              <div>
-                <FirmIcon />
-              </div>
-              <div>
-                <h1 className="font-bold text-[24px] mt-[20px]">
-                  National top 50 firms
-                </h1>
-              </div>
-              <div>
-                <p className="text-[#737373] text-[14px]">
-                  Just type what's on your mind <br />
-                  and we'll get you there.
-                </p>
-              </div>
-            </div>
-            <div className="bg-[#00A0C1] w-[328px] h-[210px]  flex flex-col  justify-center pl-[40px] shadow-xl">
-              <div>
-                <DigitalIcon />
-              </div>
-              <div className="mt-[20px]">
-                <h1 className="font-bold text-[24px] text-[#FFFFFF]">
-                  Digital Marketing
-                </h1>
-              </div>
-              <div>
-                <p className="text-[14px] text-[#FFFFFF]">
-                  the quick fox jumps over the <br />
-                  lazy dog
-                </p>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <div className="mt-36 sm:mt-16 flex flex-col xl:flex-row justify-center">
+        <div className="bg-[#F6F9FF] flex flex-col m-auto xl:m-0 w-[90%] md:w-[560px] xl:w-auto  justify-center p-[40px]">
+          <div className="text-cyan-500 text-[14px] ">
+            <h3>WHO WE ARE</h3>
+          </div>
+          <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-black]">
+            <h2>
+              Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
+            </h2>
+          </div>
+          <div>
+            At Expertizo, we are a passionate team of web app aficionados on a
+            mission <br />
+            to redefine digital excellence. With a keen eye for design and a
+            flair for <br />
+            innovation, we craft powerful and user-centric web applications that
+            drive <br />
+            growth and elevate brands. Our relentless pursuit of perfection and{" "}
+            <br />
+            commitment to cutting-edge technologies enable us to create
+            seamless, <br />
+            scalable, and secure web experiences. Join us on this digital
+            journey and <br />
+            unlock the true potential of your online presence. Let's turn your
+            ideas into <br />
+            reality!
+          </div>
+        </div>
+        <div className="w-[90%] m-auto md:w-[558px] xl:m-0 h-[419px]">
+          <Image alt="about1" src={about1} />
+        </div>
+      </div>
+      <div className="text-center font-bold mt-40">
+        <div className="text-[#00A0C1]">WHAT WE OFFER</div>
+        <div className="text-black !text-[20px] md:!text-[38px] font-bold">
+          Comprehensive Services and Solutions
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-28">
+        <div className="flex flex-col justify-center  lg:ml-5 text-center items-center  group  w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#2DB6FA] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#2DB6FA]  group-hover:bg-[#ffffff] bg-[#2DB6FA]/40 rounded-lg">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">Web App Development</div>
+          <div>
+            <div>Efficient, innovative web app development</div>
+            <div>bringing your ideas to life with cutting-edge</div>
+            <div>technology and design.</div>
+          </div>
+        </div>
+        <div className="flex flex-col  lg:mr-1 justify-center text-center group items-center w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F68C09] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#F68C09]  group-hover:bg-[#ffffff] bg-[#F68C09]/40 rounded-lg ">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">
+            Blockchain Development
+          </div>
+          <div>
+            <div>Empower projects with secure, transparent,</div>
+            <div>and efficient blockchain solutions.</div>
+            <div>Transforming industries through innovative</div>
+            <div>development.</div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center  lg:mr-5 text-center items-center group w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#08DA4E] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#08DA4E]  group-hover:bg-[#ffffff] bg-[#08DA4E]/40 rounded-lg ">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">
+            Mobile App Development
+          </div>
+          <div>
+            <div>Crafting innovative mobile apps to elevate user</div>
+            <div>experiences, transforming ideas into seamless</div>
+            <div>digital realities.</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-8">
+        <div className="flex flex-col justify-center  text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#E9222C] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#E9222C]  group-hover:bg-[#ffffff] bg-[#E9222C]/40 rounded-lg ">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">Graphics Designing</div>
+          <div>
+            <div>Transforming ideas into stunning visuals - your</div>
+            <div>partner for creative, impactful, and tailored</div>
+            <div>graphic designs.</div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#B50EDF] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#B50EDF]  group-hover:bg-[#ffffff] bg-[#B50EDF]/40 rounded-lg ">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">Trainings</div>
+          <div>
+            <div>Master web & app development through our</div>
+            <div>comprehensive training. Code, design, and</div>
+            <div>deploy with expert guidance.</div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center  text-center  items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F51F9C] hover:text-[#ffffff]">
+          <div className="w-20 h-20 pt-7 text-[#F51F9C]  group-hover:bg-[#ffffff] bg-[#F51F9C]/40 rounded-lg ">
+            <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
+          </div>
+          <div className="text-[28px] font-bold mt-9">Spaces</div>
+          <div>
+            <div>We provide well designed & equipped spaces</div>
+            <div>for training programs, meetings, conferances,</div>
+            <div>workshops & other events</div>
           </div>
         </div>
       </div>
       <div>
-        <div className="text-center">
-          <div className="font-bold text-[40px] mt-[50px] ">WHY CHOOSE US</div>
-          <div>
-            Problems trying to resolve the conflict between the two major realms
+        <div className="mt-24">
+          <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
+            core values
           </div>
-          <div>of Classical physics: Newtonian mechanics</div>
-        </div>
-        <div className="flex flex-wrap justify-center mt-[50px]">
-          <div className="shadow w-[230px] h-[209px] ml-[30px]  flex flex-col items-center justify-center">
-            <div className="w-[50px] h-[50px]">
-              <ThreeIcon />
-            </div>
-            <div className="font-bold text-[30px] mt-[10px]">3K</div>
-            <div className=" text-[16px] text-[#737373] font-bold">
-              CASES DONE
-            </div>
-          </div>
-
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center ">
-            <div>
-              <HappyIcon />
-            </div>
-            <div className="font-bold text-[30px] mt-[10px]">45</div>
-            <div className="text-[#737373] text-[16px] font-bold">
-              HAPPY CUSTOMERS
-            </div>
-          </div>
-
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
-            <div>
-              <AwardIcon />
-            </div>
-            <div className="font-bold text-[30px] mt-[10px]">12+</div>
-            <div className="text-[#737373] font-bold">AWARD WINNING</div>
-          </div>
-
-          <div className="shadow w-[230px] h-[209px] ml-[30px] flex flex-col items-center justify-center">
-            <div>
-              <CasesIcon />
-            </div>
-            <div className="font-bold text-[30px] mt-[10px]">1.5K</div>
-            <div className="text-[#737373] font-bold">CASES DONE</div>
+          <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
+            What Sets Us Apart.
           </div>
         </div>
-      </div>
-      {/* ------------------------ */}
-
-      <div className="text-center mt-12">
-        <div className="font-bold text-[40px] mt-[50px]">Practice Advice</div>
-        <div>Problems trying to resolve the conflict between</div>
-        <div>
-          the two major realms of Classical physics: Newtonian mechanics
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-center mt-[90px]">
-        <div className="ml-[30px] sm:mb-5">
-          <div className="shadow-lg w-[232px] h-[220px]">
-            <div className="font-bold text-[16] ml-[30px] mt-[30px]">
-              A single source <br />
-              of truth
-            </div>
-            <div className="text-[14px] font-medium  ml-[30px] mt-[30px] text-[#737373]">
-              Newton thought that <br />
-              light was made up of <br />
-              particles, but then it <br />
-              was discovered
-            </div>
+        <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
+          <div className="w-[90%] sm:w-[456px] h-[290px] ">
+            <Image alt="setUs" src={setUs} />
           </div>
-
-          <div className="">
-            <SourceIcon />
-          </div>
-        </div>
-        <div className=" ml-[30px] sm:mb-5">
-          <div className="shadow-lg w-[232px] h-[203px] ">
-            <div className="font-bold text-[16px] ml-[30px] mt-[30px] ">
-              Fastest way to <br />
-              organize
-            </div>
-            <div className="text-[14px]  ml-[30px] mt-[50px] text-[#737373]">
-              “Quantum mechanics” <br />
-              is the description of the <br />
-              behaviour of matter
-            </div>
-          </div>
-          <div>
-            <Image alt="img2" src={img2} />
-          </div>
-        </div>
-
-        <div className=" ml-[30px] sm:mb-5">
-          <div className="shadow-lg w-[232px] h-[203px]">
-            <div className="font-bold text-[16px] ml-[30px] mt-[30px]">
-              Fastest way to <br />
-              take action
-            </div>
-            <div className="text-[14px]  ml-[30px] mt-[50px] text-[#737373]">
-              They describe a <br />
-              universe consisting of <br />
-              bodies moving
-            </div>
-          </div>
-          <div>
-            <Image alt="alt1" src={img3} />
-          </div>
-        </div>
-        <div className="ml-[30px]">
-          <div className="shadow-lg w-[232px] h-[203px]  ">
-            <div className="font-bold text-[16px] ml-[30px] mt-[30px]">
-              Work better <br />
-              together
-            </div>
-            <div className=" text-[14px] ml-[30px] mt-[50px] text-[#737373]">
-              They finally obtained <br />
-              a consistent description <br />
-              of the behaviour
-            </div>
-          </div>
-          <div>
-            <Image alt="img" src={img4} />
-          </div>
-        </div>
-      </div>
-      {/* ------------------------ */}
-
-      <div className="mt-[300px]">
-        <div className="text-center">
-          <div className="text-[40px] font-bold ">
-            <h2>
-              We are providing best <br />
-              business service.
-            </h2>
-          </div>
-          <div>
-            <p className="text-[#737373] text-[14px] font-medium mt-5">
-              Problems trying to resolve the conflict between the two major
-              realms <br />
-              of Classical physics: Newtonian mechanics
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center justify-center flex-col md:flex-row w-full">
-          <div className="mt-14 mr-40">
-            <Image alt="img" src={image} />
-          </div>
-          <div className="mt-14">
-            <div className="text-[40px] font-bold">
-              <h2>
-                Most trusted in <br />
-                our field
-              </h2>
-            </div>
-            <div>
-              <p className="text-[14px] font-medium text-[#737373] mt-5">
-                Most calendars are designed for teams. Slate <br />
-                is designed for freelancers who want a <br />
-                simple way to plan their schedule.
-              </p>
-            </div>
-            <div className="flex mt-10">
-              <div>
-                <QuickIcon />
-              </div>
-              <div>
-                <h5 className="font-bold ml-3">
-                  the quick fox jumps over the lazy <br />
-                  dog
-                </h5>
-              </div>
-            </div>
-            <div>
-              <p className="text-[14px] font-medium text-[#737373] ml-10 mt-2">
-                Things on a very small scale ...
-              </p>
-            </div>
-            <div className="flex mt-10">
-              <div>
-                <Quick2Icon />
-              </div>
-              <div>
-                <h5 className="font-bold ml-3">
-                  the quick fox jumps over the lazy <br />
-                  dog
-                </h5>
-              </div>
-            </div>
-            <div>
-              <p className="text-[14px] font-medium text-[#737373] ml-10 mt-2">
-                Things on a very small scale ...
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-[#FAFAFA] mt-20">
-        <div className="bg-[#FAFAFA] w-[1440] h-[339] flex justify-evenly flex-wrap gap-5">
-          <div className="mt-20">
-            <HooliIcon />
-          </div>
-          <div className="mt-20">
-            <LyftIcon />
-          </div>
-          <div className="mt-20">
-            <LeaveIcon />
-          </div>
-          <div className="mt-20">
-            <StripeIcon />
-          </div>
-          <div className="mt-20">
-            <Awsicon />
-          </div>
-          <div className="mt-20">
-            <MaskIcon />
-          </div>
-        </div>
-        <div className="relative w-full h-[300px]">
-          <div className="flex justify-center h-[100px] bg-[#252B42] mt-20 absolute bottom-0 w-full"></div>
-          <div className="absolute bottom-14 w-full flex justify-center">
-            <div className="bg-[#16697A] w-[70%] h-[124px] flex justify-between pt-6 pl-10 pr-10  ">
-              <div>
-                <h1 className="font-bold text-[24px] text-[#FFFFFF]">
-                  Subscribe For Latest <br />
-                  Newsletter
-                </h1>
-              </div>
-              <div className="flex border-[1px] w-[450px] rounded-[5px] h-[58px]">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="YOUR EMAIL"
-                    className="text-[14px] w-[333px] h-[58px] font-normal pl-5"
+          <div className="flex  flex-col  items-start ">
+            <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+                <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
                   />
                 </div>
-                <div>
-                  <button className="w-[117px] h-[58px] text-[#ffffff]">
-                    Subscribe
-                  </button>
+
+                <div>Innovation</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
                 </div>
+                <div>Commitment</div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px]  font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4">
+                <div className="border bg-[#d6eaf8]  rounded  hover:bg-blue-700 mr-3 ">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Goals</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Team Work</div>
+              </div>
+            </div>
+            <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Responsibility</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Satisfaction</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#F3F3F3]">
+
+      <Leadership />
+      <WhyChooseUs />
+      <PracticeAdvise />
+      <Providing />
+      <Mask />
+      <Getintouch />
+      <div className="mt-10 m-auto w-[90%] mb-10">
         <div className="text-center">
-          <div className="text-[40px] font-bold pt-16">
-            <h1>Get In Touch</h1>
-          </div>
-          <div className="text-[14px] font-medium text-[#737373] mt-1">
-            Problems trying to resolve the conflict between <br />
-            the two major realms of Classical physics: Newtonian mechanics
+          <div className="text-[#00A0C1] font-bold">CONTACT</div>
+          <div className="text-black text-[25px] sm:text-[38px] font-bold">
+            Let's start a conversation
           </div>
         </div>
-        <div className="flex justify-center mt-24">
-          <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
-            <div className="ml-32">
-              <CallIcon />
+        <div className="flex flex-col xl:flex-row  justify-center items-center m-auto ">
+          <div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 m-auto items-center">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div>
+                  <PlaceIcon sx={{ fontSize: "70px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[12px] sm:text-[14px] text-[#444444]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[12px] sm:text-[14px]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <AccessTimeIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Open Hours
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Monday - Friday
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    9:00AM - 05:00PM
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="text-[#252B42] mt-2 font-semibold">
-              <p>georgia.young@example.com</p>
+            <div className="flex flex-col sm:flex-row  justify-center gap-4 items-center m-auto mt-3">
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <MailOutlineIcon
+                    sx={{ fontSize: "50px", color: "#00A0C1" }}
+                  />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]]">
+                    Email Us
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    info@expertizo.pk
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+                <div className="ml-5">
+                  <PhoneIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
+                </div>
+                <div className="ml-5 mt-5">
+                  <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
+                    Address
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Office No. 5, Mazhar Arcade
+                  </div>
+                  <div className="text-[#444444] text-[12px] sm:text-[14px]">
+                    Bahadurabad Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="text-[#252B42] mt-2 font-semibold">
-              georgia.young@ple.com
+          </div>
+          <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] pt-6 md:pt-0 mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
+            <div className="flex flex-col md:flex-row gap-5 ">
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <input
+                  className="w-[90%] sm:w-[276px] h-[43px] border pl-5 text-[14px]"
+                  type="text"
+                  placeholder="Your Email"
+                />
+              </div>
             </div>
-            <div className="font-bold text-[#252B42] mt-4">Get Support</div>
+            <div className="m-4">
+              <input
+                className="w-[90%] sm:w-[276px] md:w-[576px] h-[43px] border pl-5 text-[14px]"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
             <div>
-              <button className="text-[14px] w-[160px] h-[44px] text-[#FFA62B] border border-[#FFA62B] font-semibold mt-5 rounded hover:bg-[#FFA62B] hover:text-[#FFFFFF]">
-                Submit Request
+              <label>
+                <textarea
+                  className="border w-[163px] sm:w-[276px]  md:w-[576px] h-[152px] mr-5 sm:mr-0 sm:m-0 pl-5 pt-3 text-[14px]"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </label>
+            </div>
+            <div className="m-3 mr-8">
+              <button className="border  w-[166px] h-[44px] rounded bg-[#00A0C1] hover:bg-[#16697A]  hover:border-[#00A0C1] text-[#ffffff]">
+                Send Message
               </button>
             </div>
           </div>
-          <div className="w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center ">
-            <div className="ml-32">
-              <LocationIcon />
+        </div>
+        {/* <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+            <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Responsibility</div>
             </div>
-            <div className="text-[#FFFFFF] mt-2">
-              <p>georgia.young@example.com</p>
+            <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+              <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                <DoneIcon
+                  sx={{ color: "black", ":hover": { color: "white" } }}
+                />
+              </div>
+              <div>Satisfaction</div>
             </div>
-            <div className="text-[#FFFFFF]">georgia.young@ple.com</div>
-            <div className="text-[#FFFFFF] font-bold mt-4">Get Support</div>
-            <div>
-              <button className="text-[14px] w-[160px] h-[44px] text-[#FFFFFF] border border-[#FFFFFF] mt-5 rounded hover:bg-[#FFFFFF] hover:text-[#252B42]">
-                Submit Request
-              </button>
-            </div>
+          </div> */}
+        {/* <div>
+             <div className="mt-24">
+          <div className="text-cyan-500 font-bold text-[18px] flex justify-center mt-5">
+            core values
           </div>
-          <div className="w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
-            <div className="ml-32">
-              <TweetIcon />
-            </div>
-            <div className="text-[#252B42] mt-2 font-semibold">
-              <p>georgia.young@example.com</p>
-            </div>
-            <div className="text-[#252B42] mt-2 font-semibold">
-              georgia.young@ple.com
-            </div>
-            <div className="font-bold text-[#252B42] mt-4">Get Support</div>
-            <div>
-              <button className="text-[14px] w-[160px] h-[44px] text-[#FFA62B]  border border-[#FFA62B] font-semibold mt-5 rounded hover:bg-[#FFA62B] hover:text-[#FFFFFF]">
-                Submit Request
-              </button>
-            </div>
+          <div className="!text-[20px] sm:!text-[38px] font-bold flex justify-center text-[#012970] ">
+            What Sets Us Apart.
           </div>
         </div>
-      </div>
-      <div className="flex justify-evenly bg-[#FAFAFA]  h-[142px] pt-14 ">
-        <div>
-          <div className="font-bold text-[24px]">
-            Consulting Agency For Your Business
+        <div className="flex flex-col xl:flex-row justify-center items-center m-auto gap-14 mt-5">
+          <div className="w-[90%] sm:w-[456px] h-[290px] ">
+            <Image alt="setUs" src={setUs} />
           </div>
-          <div className="text-[14px] text-[#737373] font-normal mt-3">
-            the quick fox jumps over the lazy dog
-          </div>
-        </div>
-        <div>
-          <button className="w-[160px] h-[58px] text-[#FFFFFF] bg-[#16697A] border rounded hover:bg-[#FAFAFA]  hover:text-[#16697A] hover:border-[#16697A] ">
-            Contact Us
-          </button>
-        </div>
-      </div>
+          <div className="flex  flex-col  items-start ">
+            <div className="flex flex-col sm:flex-row justify-center  mt-10 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center pl-4">
+                <div className="bg-[#d6eaf8] border  rounded   hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
 
-      <div className="flex justify-center text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
-        <div className="mr-40">
-          <div className="font-bold text-[16px]">Company Info</div>
-          <div className="mt-8">About Us</div>
-          <div className="mt-4">Carrier</div>
-          <div className="mt-4">We are hiring</div>
-          <div className="mt-4">Blog</div>
-        </div>
-        <div className="mr-40">
-          <div className="font-bold text-[16px]">Legal</div>
-          <div className="mt-8">About Us</div>
-          <div className="mt-4">Carrier</div>
-          <div className="mt-4">We are hiring</div>
-          <div className="mt-4">Blog</div>
-        </div>
-        <div className="mr-40">
-          <div className="font-bold text-[16px]">Features</div>
-          <div className="mt-8">Business Marketing</div>
-          <div className="mt-4">User Analytic</div>
-          <div className="mt-4">Live Chat</div>
-          <div className="mt-4">Unlimited Support</div>
-        </div>
-        <div className="mr-40">
-          <div className="font-bold text-[16px]">Resources</div>
-          <div className="mt-8">IOS & Android</div>
-          <div className="mt-4">Watch a Demo</div>
-          <div className="mt-4">Customers</div>
-          <div className="mt-4">API</div>
-        </div>
-        <div>
-          <div className="font-bold text-[16px]">Get In Touch</div>
-          <div className="flex">
-            <div className="mr-3 mt-8">
-              <PhoneIcon />
+                <div>Innovation</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border  bg-[#c4dbea] rounded  hover:bg-blue-700  mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Commitment</div>
+              </div>
             </div>
-            <div className="mt-8">(480) 555-0103</div>
-          </div>
-          <div className="flex mt-4">
-            <div className="mr-3">
-              <Location2Icon />
+            <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px]  font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4">
+                <div className="border bg-[#d6eaf8]  rounded  hover:bg-blue-700 mr-3 ">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Goals</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center  pl-4 mb-5 sm: mb-5">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Team Work</div>
+              </div>
             </div>
-            <div>4517 Washington Ave. Manchester, Kentucky 39495</div>
-          </div>
-          <div className="flex mt-4">
-            <div className="mr-3 ">
-              <Tweeter2Icon />
+            <div className=" flex flex-col sm:flex-row  justify-center mt-5 gap-10">
+              <div className=" text-[#012970] text-[18px] font-semibold shadow w-64 h-16 flex justify-start items-center  pl-4">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Responsibility</div>
+              </div>
+              <div className=" text-[#012970] text-[18px] font-semibold shadow  w-64 h-16 flex justify-start items-center pl-4 ">
+                <div className="border bg-[#d6eaf8] rounded  hover:bg-blue-700 mr-3">
+                  <DoneIcon
+                    sx={{ color: "black", ":hover": { color: "white" } }}
+                  />
+                </div>
+                <div>Satisfaction</div>
+              </div>
             </div>
-            <div>debra.holt@example.com</div>
           </div>
         </div>
+          </div> */}
       </div>
-
-      <div className="flex justify-between pt-8 bg-[#FAFAFA] pb-8">
-        <div className="ml-52">
-          Made With Love By Figmaland All Right Reserved
-        </div>
-        <div className="flex mr-52 ">
-          <div className="mr-7">
-            <FacebookIcon />
-          </div>
-          <div className="mr-7">
-            <InstagramIcon />
-          </div>
-          <div className="mr-7">
-            <Tweeter3Icon />
-          </div>
-          <div className="mr-7">
-            <YoutubeIcon />
-          </div>
-        </div>
-      </div>
+      <Consulting />
     </Box>
   );
 }
