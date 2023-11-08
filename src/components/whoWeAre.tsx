@@ -1,24 +1,5 @@
-import React from "react";
-import img from "@/assets/images/new/hero-bg.png";
-import left from "@/assets/images/new/mobile-app2.gif";
 import about1 from "@/assets/images/new/responsive.gif";
-import Consulting from "@/components/consulting";
-import Getintouch from "@/components/getintouch";
-import Mask from "@/components/mask";
-import PracticeAdvise from "@/components/practiceAdvise";
-import Providing from "@/components/providing";
-import WhyChooseUs from "@/components/whyChooseUs";
-import { Box } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
-import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import PlaceIcon from "@mui/icons-material/Place";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Leadership from "@/components/leadership";
-import setUs from "@/assets/images/123.png";
-import DoneIcon from "@mui/icons-material/Done";
 
 export default function WhoWeAre() {
   return (
@@ -32,25 +13,26 @@ export default function WhoWeAre() {
         </div>
         <div className=" !text-[20px] sm:!text-[28px] text-[bold] text-black]">
           <h2>
-            Unleashing Digital Brilliance: Meet Our <br /> Web App Wizards
+            Embark your Digital Journey with Our <br /> Web App, Maestros
           </h2>
         </div>
         <div>
-          At Expertizo, we are a passionate team of web app aficionados on a
-          mission <br />
-          to redefine digital excellence. With a keen eye for design and a flair
-          for <br />
-          innovation, we craft powerful and user-centric web applications that
-          drive <br />
-          growth and elevate brands. Our relentless pursuit of perfection and{" "}
+          Universal Tech is a digital platform where innovation meets expertise.
+          We are a leading <br />
+          software development agency that empowers clients to embrace modern
+          technology. <br /> With a innovation, we craft powerful and
+          user-centric web applications that team of <br /> passionate and
+          skilled professionals, we deliver cutting-edge software services. We{" "}
           <br />
-          commitment to cutting-edge technologies enable us to create seamless,{" "}
+          craft transformational digital products like web applications and UX
+          designs that drive
           <br />
-          scalable, and secure web experiences. Join us on this digital journey
-          and <br />
-          unlock the true potential of your online presence. Let's turn your
-          ideas into <br />
-          reality!
+          growth and elevate brands. With modernized vital systems, we enable
+          enterprises to
+          <br />
+          transform data into business advantages. Explore our world of
+          technology, and let us <br />
+          transform your ideas into reality.
         </div>
       </div>
       <div className="w-[90%] m-auto md:w-[558px] xl:m-0 h-[419px]">
