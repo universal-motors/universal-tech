@@ -13,9 +13,10 @@ export default function WhyChooseUs() {
         </div>
         <div className="text-[12px] sm:text-[14px]">
           <div>
-            Problems trying to resolve the conflict between the two major realms
+            Due to our high-end services, each project highlights our commitment
+            to excellence and
           </div>
-          <div>of Classical physics: Newtonian mechanics</div>
+          <div>showcases the impact of our work to clients worldwide. </div>
         </div>
       </div>
       <div className="flex flex-wrap gap-y-2 justify-center mt-[50px]">

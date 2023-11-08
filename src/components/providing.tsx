@@ -10,7 +10,7 @@ export default function Providing() {
         <div className="text-[40px] font-bold">
           <h2>
             We are providing best <br />
-            business service.
+            Digital Business Services
           </h2>
         </div>
         <div>
@@ -34,9 +34,9 @@ export default function Providing() {
           </div>
           <div>
             <p className="text-[14px] font-medium text-[#737373] mt-5">
-              Most calendars are designed for teams. Slate <br />
-              is designed for freelancers who want a <br />
-              simple way to plan their schedule.
+              Universal Tech is the platform you can trust with <br />
+              your programming concerns to grow your <br />
+              business digitally.
             </p>
           </div>
           <div className="flex mt-10">

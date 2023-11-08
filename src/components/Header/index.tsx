@@ -1,11 +1,7 @@
 "use client";
-import LogoDark from "@/assets/images/logo-dark.png";
-import LogoLight from "@/assets/images/logo-light.png";
-import Image from "next/image";
-import Link from "next/link";
+import TogglerIcon from "@/assets/svgs/toggler";
 import { useState } from "react";
 import CustomLink from "../CustomLink";
-import TogglerIcon from "@/assets/svgs/toggler";
 export default function Header() {
   const [isOpen, setMenu] = useState(true);
   const toggleMenu = () => {
@@ -54,12 +50,12 @@ export default function Header() {
               className="navbar-nav nav-black flex gap-6 "
               id="navbar-navlist"
             >
-              <CustomLink text="Home" to="home" />
-              <CustomLink text="About us" to="product" />
-              <CustomLink text="Services" to="services" />
-              <CustomLink text="Portfolio" to="portfolio" />
-              <CustomLink text="Team" to="team" />
-              <CustomLink text="Contact us" to="contact us" />
+              <CustomLink text="Home" to="#home" />
+              <CustomLink text="About us" to="#aboutus" />
+              <CustomLink text="Services" to="#services" />
+              <CustomLink text="Portfolio" to="#portfolio" />
+              <CustomLink text="Team" to="#team" />
+              <CustomLink text="Contact us" to="#contactus" />
             </ul>
           </div>
         </div>
