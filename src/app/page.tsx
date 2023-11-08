@@ -1,30 +1,21 @@
 "use client";
 import img from "@/assets/images/new/hero-bg.png";
 import left from "@/assets/images/new/mobile-app2.gif";
-import about1 from "@/assets/images/new/responsive.gif";
 import Consulting from "@/components/consulting";
+import Conversation from "@/components/conversation";
 import Getintouch from "@/components/getintouch";
+import Leadership from "@/components/leadership";
 import Mask from "@/components/mask";
+import Portfolio from "@/components/portfolio";
 import PracticeAdvise from "@/components/practiceAdvise";
 import Providing from "@/components/providing";
+import WhatWeOffer from "@/components/whatWeOffer";
+import WhoWeAre from "@/components/whoWeAre";
 import WhyChooseUs from "@/components/whyChooseUs";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import PlaceIcon from "@mui/icons-material/Place";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Leadership from "@/components/leadership";
-import setUs from "@/assets/images/123.png";
-import DoneIcon from "@mui/icons-material/Done";
 import Setusapart from "./dashboard/components/Setusapart";
-import bistrochat from "src/assets/images/bistroChat.png";
-import WhoWeAre from "@/components/whoWeAre";
-import WhatWeOffer from "@/components/whatWeOffer";
-import Conversation from "@/components/conversation";
-import Portfolio from "@/components/portfolio";
 
 export default function HomePage() {
   return (

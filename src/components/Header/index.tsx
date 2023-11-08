@@ -1,11 +1,7 @@
 "use client";
-import LogoDark from "@/assets/images/logo-dark.png";
-import LogoLight from "@/assets/images/logo-light.png";
-import Image from "next/image";
-import Link from "next/link";
+import TogglerIcon from "@/assets/svgs/toggler";
 import { useState } from "react";
 import CustomLink from "../CustomLink";
-import TogglerIcon from "@/assets/svgs/toggler";
 export default function Header() {
   const [isOpen, setMenu] = useState(true);
   const toggleMenu = () => {

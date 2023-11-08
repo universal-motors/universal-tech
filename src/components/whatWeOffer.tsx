@@ -1,25 +1,4 @@
-import React from "react";
-import img from "@/assets/images/new/hero-bg.png";
-import left from "@/assets/images/new/mobile-app2.gif";
-import about1 from "@/assets/images/new/responsive.gif";
-import Consulting from "@/components/consulting";
-import Getintouch from "@/components/getintouch";
-import Mask from "@/components/mask";
-import PracticeAdvise from "@/components/practiceAdvise";
-import Providing from "@/components/providing";
-import WhyChooseUs from "@/components/whyChooseUs";
-import { Box } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import PlaceIcon from "@mui/icons-material/Place";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Leadership from "@/components/leadership";
-import setUs from "@/assets/images/123.png";
-import DoneIcon from "@mui/icons-material/Done";
-import WhoWeAre from "@/components/whoWeAre";
 
 export default function WhatWeOffer() {
   return (
