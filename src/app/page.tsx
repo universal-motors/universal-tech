@@ -45,7 +45,8 @@ export default function HomePage() {
             <div>
               <div className="grid grid-cols-1 ">
                 <h1 className="text-black font-extrabold text-[30px] sm:text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
-                  We offer modern solutions <br /> for growing your business
+                  We offer Digital Solutions <br /> That Empower Businesses and
+                  Individuals.
                   <span
                     className="typewrite relative text-type-element"
                     id="typed"
@@ -54,8 +55,8 @@ export default function HomePage() {
                   ></span>
                 </h1>
                 <p className="text-[#737373] text-[30px]  mb-0 max-w-2xl text-lg">
-                  We help businesses digitally transform, build new products,
-                  and accelerate digital teams. Contact Us
+                  We deliver software services tailored to meet your unique
+                  needs and to transform your businesses digitally.
                 </p>
               </div>
               <div className="flex gap-6">

@@ -42,13 +42,13 @@ export default function Setusapart() {
                 <DoneIcon className="group-hover:text-[#ffffff]" />
               </div>
 
-              <div>Innovation</div>
+              <div>Flexibility</div>
             </div>
             <div className=" text-[#012970] text-[18px] font-semibold  group shadow w-64 h-16 flex justify-start items-center  pl-4 mb-5 ">
               <div className="border  bg-[#c4dbea] rounded group-hover:bg-cyan-500   mr-3">
                 <DoneIcon className="group-hover:text-[#ffffff]" />
               </div>
-              <div>Commitment</div>
+              <div>Innovation</div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row justify-center mt-5 gap-10">
@@ -56,7 +56,7 @@ export default function Setusapart() {
               <div className="border bg-[#d6eaf8]  rounded  group-hover:bg-cyan-500 mr-3 ">
                 <DoneIcon className="group-hover:text-[#ffffff]" />
               </div>
-              <div>Goals</div>
+              <div>Collaboration</div>
             </div>
             <div className=" text-[#012970] text-[18px] font-semibold shadow group w-64 h-16 flex justify-start items-center  pl-4 mb-5 ">
               <div className="border bg-[#d6eaf8] rounded  group-hover:bg-cyan-500 mr-3">
@@ -70,13 +70,13 @@ export default function Setusapart() {
               <div className="border bg-[#d6eaf8] rounded  group-hover:bg-cyan-500 mr-3">
                 <DoneIcon className="group-hover:text-[#ffffff]" />
               </div>
-              <div>Responsibility</div>
+              <div>High-Quality Service</div>
             </div>
             <div className=" text-[#012970] text-[18px] font-semibold shadow group w-64 h-16 flex justify-start items-center pl-4 ">
               <div className="border bg-[#d6eaf8] rounded group-hover:bg-cyan-500 mr-3">
                 <DoneIcon className="group-hover:text-[#ffffff]" />
               </div>
-              <div>Satisfaction</div>
+              <div>Commitment Meet Our Leaders</div>
             </div>
           </div>
         </div>

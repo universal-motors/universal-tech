@@ -10,8 +10,9 @@ export default function Getintouch() {
           <h1>Get In Touch</h1>
         </div>
         <div className="text-[14px] font-medium text-[#737373] mt-1">
-          Problems trying to resolve the conflict between <br />
-          the two major realms of Classical physics: Newtonian mechanics
+          Ready to embark on your digital journey with Universal Tech? Get in
+          touch to get <br />
+          your desired service now. We’d love to hear from you.
         </div>
       </div>
       <div className=" flex-col md:flex-row  flex justify-center mt-24 items-end pb-10">
