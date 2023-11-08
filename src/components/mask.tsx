@@ -8,24 +8,24 @@ import React from "react";
 
 export default function Mask() {
   return (
-    <div className="bg-[#FAFAFA] flex-wrap  ">
-      <div className="bg-[#FAFAFA] w-[1440] h-[300px] ml-0  flex-col sm:flex-row flex  justify-center items-center flex-wrap gap-40">
-        <div className="">
+    <div className="bg-[#FAFAFA] flex-wrap mt-20">
+      <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-0  flex-col sm:flex-row flex justify-evenly items-center flex-wrap gap-5">
+        <div className="mt-20 mb-20">
           <HooliIcon />
         </div>
-        <div className="">
+        <div className="mt-20 mb-20">
           <LyftIcon />
         </div>
-        <div className="">
+        <div className="mt-20 mb-20">
           <LeaveIcon />
         </div>
-        <div className="">
+        <div className="mt-20 mb-20">
           <StripeIcon />
         </div>
-        <div className="">
+        <div className="mt-20 mb-20">
           <Awsicon />
         </div>
-        <div className="">
+        <div className="mt-20 mb-20">
           <MaskIcon />
         </div>
       </div>
