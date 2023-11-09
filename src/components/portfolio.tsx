@@ -19,12 +19,46 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import Leadership from "@/components/leadership";
 import setUs from "@/assets/images/123.png";
 import DoneIcon from "@mui/icons-material/Done";
-import bistrochat from "src/assets/images/bistroChat.png";
+import bistrochat from "../../src/assets/images/bistroChat.png";
 import WhoWeAre from "@/components/whoWeAre";
 import WhatWeOffer from "@/components/whatWeOffer";
 import Conversation from "@/components/conversation";
+import react, { useState } from "react";
+import App from "next/app";
+import { type } from "os";
+import { log } from "console";
 
+type ArrType = {
+  image: any;
+  type: string;
+};
 export default function Portfolio() {
+  const [Arrtype, setArrType] = useState("all");
+  console.log(Arrtype);
+
+  const arr: ArrType[] = [
+    {
+      image: bistrochat,
+      type: "app",
+    },
+    {
+      image: bistrochat,
+      type: "App",
+    },
+    {
+      image: bistrochat,
+      type: "App",
+    },
+  ];
+  const all = () => {
+    setArrType("all");
+  };
+  const app = () => {
+    setArrType("app");
+  };
+  const web = () => {
+    setArrType("web");
+  };
   return (
     <div className="m-auto flex flex-col justify-center items-center">
       <div id="portfolio">
@@ -39,44 +73,42 @@ export default function Portfolio() {
           </div>
           <div className="font-semibold flex justify-center items-center gap-14 mt-10 mb-10">
             <div>
-              <button className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500">
+              <button
+                className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500"
+                onClick={all}
+              >
                 All
               </button>{" "}
             </div>
             <div>
-              <button className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500">
+              <button
+                className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500"
+                onClick={app}
+              >
                 {" "}
                 App{" "}
               </button>{" "}
             </div>
             <div>
               {" "}
-              <button className="rounded-full border w-[70px] h-[40px] hover:border-cyan-500 hover:text-cyan-500">
+              <button
+                className="rounded-full border w-[70px] h-[40px] hover:border-cyan-500 hover:text-cyan-500"
+                onClick={web}
+              >
                 Web
               </button>{" "}
             </div>
           </div>
           <div className="flex-wrap  flex-row flex justify-center items-center m-auto gap-5">
-            <div className="flex justify-center items-center m-auto w-[90%] sm:w-[450px] h-[450px] border  ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
-            <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
-            <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
-          </div>
-          <div className="flex justify-center flex-wrap items-center gap-5 mt-5">
-            <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
-            <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
-            <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
-              <Image alt="bistroChat" src={bistrochat} />
-            </div>
+            {arr.map((e, i) => {
+              return (
+                <>
+                  <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
+                    <Image alt="bistroChat" src={e.image} />
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </div>
