@@ -7,8 +7,6 @@ import Getintouch from "@/components/getintouch";
 import Leadership from "@/components/leadership";
 import Mask from "@/components/mask";
 import Portfolio from "@/components/portfolio";
-import PracticeAdvise from "@/components/practiceAdvise";
-import Providing from "@/components/providing";
 import WhatWeOffer from "@/components/whatWeOffer";
 import WhoWeAre from "@/components/whoWeAre";
 import WhyChooseUs from "@/components/whyChooseUs";
@@ -73,8 +71,8 @@ export default function HomePage() {
       <Portfolio />
       <Leadership />
       <WhyChooseUs />
-      <PracticeAdvise />
-      <Providing />
+      {/* <PracticeAdvise /> */}
+      {/* <Providing /> */}
       <Mask />
       <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32 text-center">
