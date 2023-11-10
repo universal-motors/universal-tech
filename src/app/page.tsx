@@ -7,8 +7,6 @@ import Getintouch from "@/components/getintouch";
 import Leadership from "@/components/leadership";
 import Mask from "@/components/mask";
 import Portfolio from "@/components/portfolio";
-import PracticeAdvise from "@/components/practiceAdvise";
-import Providing from "@/components/providing";
 import WhatWeOffer from "@/components/whatWeOffer";
 import WhoWeAre from "@/components/whoWeAre";
 import WhyChooseUs from "@/components/whyChooseUs";
@@ -16,6 +14,7 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import Setusapart from "./dashboard/components/Setusapart";
+import Testominal from "./dashboard/components/testominal";
 
 export default function HomePage() {
   return (
@@ -73,9 +72,10 @@ export default function HomePage() {
       <Portfolio />
       <Leadership />
       <WhyChooseUs />
-      <PracticeAdvise />
-      <Providing />
+      {/* <PracticeAdvise /> */}
+      {/* <Providing /> */}
       <Mask />
+      <Testominal />
       <Getintouch />
       <Conversation />
       <Consulting />
