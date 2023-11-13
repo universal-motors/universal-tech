@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="font-bold text-[30px] mt-[10px]">3K</div>
           <div className=" text-[16px] text-[#737373] font-bold">
-            CASES DONE
+            Satisfied Customers
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="font-bold text-[30px] mt-[10px]">45</div>
           <div className="text-[#737373] text-[16px] font-bold">
-            HAPPY CUSTOMERS
+            Web Solutions
           </div>
         </div>
 
@@ -45,7 +45,9 @@ export default function WhyChooseUs() {
             <AwardIcon />
           </div>
           <div className="font-bold text-[30px] mt-[10px]">12+</div>
-          <div className="text-[#737373] font-bold">AWARD WINNING</div>
+          <div className="text-[#737373] font-bold">
+            Seamless User Experience
+          </div>
         </div>
 
         <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
@@ -53,7 +55,7 @@ export default function WhyChooseUs() {
             <CasesIcon />
           </div>
           <div className="font-bold text-[30px] mt-[10px]">1.5K</div>
-          <div className="text-[#737373] font-bold">CASES DONE</div>
+          <div className="text-[#737373] font-bold">Expert Team   </div>
         </div>
       </div>
     </div>
