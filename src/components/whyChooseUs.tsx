@@ -24,9 +24,9 @@ export default function WhyChooseUs() {
           <div className="w-[50px] h-[50px]">
             <ThreeIcon />
           </div>
-          <div className="font-bold text-[30px] mt-[10px]">3K</div>
+          <div className="font-bold text-[30px] mt-[10px]">2K</div>
           <div className=" text-[16px] text-[#737373] font-bold">
-            CASES DONE
+            Happy Clients
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="font-bold text-[30px] mt-[10px]">45</div>
           <div className="text-[#737373] text-[16px] font-bold">
-            HAPPY CUSTOMERS
+            Current Projects
           </div>
         </div>
 
@@ -44,16 +44,16 @@ export default function WhyChooseUs() {
           <div>
             <AwardIcon />
           </div>
-          <div className="font-bold text-[30px] mt-[10px]">12+</div>
-          <div className="text-[#737373] font-bold">AWARD WINNING</div>
+          <div className="font-bold text-[30px] mt-[10px]">50</div>
+          <div className="text-[#737373] font-bold">Completed Projects</div>
         </div>
 
         <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
           <div>
             <CasesIcon />
           </div>
-          <div className="font-bold text-[30px] mt-[10px]">1.5K</div>
-          <div className="text-[#737373] font-bold">CASES DONE</div>
+          <div className="font-bold text-[30px] mt-[10px]">65+</div>
+          <div className="text-[#737373] font-bold"> Global Presence</div>
         </div>
       </div>
     </div>

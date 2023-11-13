@@ -5,28 +5,26 @@ export default function Testominal() {
   const [currentIndex, setIndex] = useState(0);
   const testimonials = [
     {
-      name: "Maria Kate",
-      role: "Photographer",
+      name: "John Smith ",
+      role: " Director",
       avatar: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg",
       content:
-        "In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar. Sed semper ligula sed lorem tincidunt dignissim. Nam sed cursus lectus. Proin non rutrum magna. Proin gravida, justo et imperdiet tristique turpis nisi viverra.",
+        "Collaborating with Universal Tech on our complex website development project was a seamless experience. Their developers showcased exceptional technical skills and a deep understanding of our requirements. They made a fantastic website that streamlined our operations and enhanced efficiency. We look forward to working with them again.",
       rating: 5,
     },
     {
-      name: "John jil",
-      role: "Photographer",
+      name: "Maria Kate  ",
+      role: "C.E.O",
       avatar: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg",
       content:
-        "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eveniet vel officia necessitatibus dolorem dolorum quae nam voluptatem quibusdam perspiciatis quia, nostrum cupiditate harum ea consequatur hic temporibus facere quaerat.",
-      rating: 5,
+        "  Working with Universal Tech was a game-changing experience for our business. Their team not only delivered the cutting-edge mobile app within our deadline but also made our business more efficient.",
     },
     {
-      name: "david joke",
-      role: "Photographer",
+      name: "David Bing ",
+      role: "C.F.O",
       avatar: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg",
       content:
-        "In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar. Sed semper ligula sed lorem tincidunt dignissim. Nam sed cursus lectus. Proin non rutrum magna. Proin gravida, justo et imperdiet tristique turpis nisi viverra.",
-      rating: 5,
+        "Choosing Universal Tech was one of the best decisions we made. Their team’s professionalism and dedication to delivering the best solution are unmatched. They understood our unique business challenges and provided solutions accordingly; we will work with them next time.",
     },
   ];
   const next = () => {

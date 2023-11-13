@@ -1,36 +1,13 @@
 import React from "react";
-import img from "@/assets/images/new/hero-bg.png";
-import left from "@/assets/images/new/mobile-app2.gif";
-import about1 from "@/assets/images/new/responsive.gif";
-import Consulting from "@/components/consulting";
-import Getintouch from "@/components/getintouch";
-import Mask from "@/components/mask";
-import PracticeAdvise from "@/components/practiceAdvise";
-import Providing from "@/components/providing";
-import WhyChooseUs from "@/components/whyChooseUs";
-import { Box } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
-import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import PlaceIcon from "@mui/icons-material/Place";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Leadership from "@/components/leadership";
-import setUs from "@/assets/images/123.png";
-import DoneIcon from "@mui/icons-material/Done";
 import bistrochat from "../../src/assets/images/bistroChat.png";
-import WhoWeAre from "@/components/whoWeAre";
-import WhatWeOffer from "@/components/whatWeOffer";
-import Conversation from "@/components/conversation";
 import react, { useState } from "react";
-import App from "next/app";
-import { type } from "os";
-import { log } from "console";
+import PortfolioCard from "./portfolioCard";
 
 type ArrType = {
   image: any;
   type: string;
+  description: string;
+  heading: string;
 };
 export default function Portfolio() {
   const [Arrtype, setArrType] = useState("all");
@@ -40,16 +17,47 @@ export default function Portfolio() {
     {
       image: bistrochat,
       type: "app",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
       image: bistrochat,
-      type: "App",
+      type: "app",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
       image: bistrochat,
-      type: "App",
+      type: "app",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
+    },
+    {
+      image: bistrochat,
+      type: "app",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
+    },
+    {
+      image: bistrochat,
+      type: "web",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
+    },
+    {
+      image: bistrochat,
+      type: "web",
+      heading: "Bistro Chat",
+      description:
+        "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
   ];
+
   const all = () => {
     setArrType("all");
   };
@@ -74,7 +82,9 @@ export default function Portfolio() {
           <div className="font-semibold flex justify-center items-center gap-14 mt-10 mb-10">
             <div>
               <button
-                className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500"
+                className={`rounded-full  w-[70px] h-[40px] ${
+                  Arrtype === "all" ? " border border-cyan-500" : ""
+                } hover:border hover:border-cyan-500  hover:text-cyan-500`}
                 onClick={all}
               >
                 All
@@ -82,7 +92,9 @@ export default function Portfolio() {
             </div>
             <div>
               <button
-                className="rounded-full border w-[70px] h-[40px]  hover:border-cyan-500  hover:text-cyan-500"
+                className={`rounded-full hover:border w-[70px] h-[40px] ${
+                  Arrtype === "app" ? "border border-cyan-500" : ""
+                }  hover:border-cyan-500  hover:text-cyan-500`}
                 onClick={app}
               >
                 {" "}
@@ -92,22 +104,31 @@ export default function Portfolio() {
             <div>
               {" "}
               <button
-                className="rounded-full border w-[70px] h-[40px] hover:border-cyan-500 hover:text-cyan-500"
+                className={`rounded-full hover:border w-[70px] h-[40px]  ${
+                  Arrtype === "web" ? "border border-cyan-500" : ""
+                } hover:border-cyan-500 hover:text-cyan-500`}
                 onClick={web}
               >
                 Web
               </button>{" "}
             </div>
           </div>
-          <div className="flex-wrap  flex-row flex justify-center items-center m-auto gap-5">
+          <div className="w-[90%] flex flex-wrap  flex-row  justify-center items-center m-auto gap-5">
             {arr.map((e, i) => {
-              return (
-                <>
-                  <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  ">
-                    <Image alt="bistroChat" src={e.image} />
-                  </div>
-                </>
-              );
+              if (e.type === Arrtype) {
+                return (
+                  <>
+                    <PortfolioCard e={e} />
+                  </>
+                );
+              }
+              if (Arrtype === "all") {
+                return (
+                  <>
+                    <PortfolioCard e={e} />
+                  </>
+                );
+              }
             })}
           </div>
         </div>
