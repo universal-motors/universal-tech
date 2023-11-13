@@ -74,6 +74,7 @@ export default function HomePage() {
       {/* <PracticeAdvise /> */}
       {/* <Providing /> */}
       <Mask />
+
       <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32 text-center">
           <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
@@ -102,10 +103,10 @@ export default function HomePage() {
                       Photographer
                     </p>
                     <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                      In ac turpis justo. Vivamus auctor quam vitae odio feugiat
-                      pulvinar. Sed semper ligula sed lorem tincidunt dignissim.
-                      Nam sed cursus lectus. Proin non rutrum magna. Proin
-                      gravida, justo et imperdiet tristique turpis nisi viverra.
+                      Working with Universal Tech was a game-changing experience
+                      for our business. Their team not only delivered the
+                      cutting-edge mobile app within our deadline but also made
+                      our business more efficient.
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 96 960 960"
@@ -193,15 +194,18 @@ export default function HomePage() {
                 />
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
-                    <h5 className="mb-2 text-lg font-bold">John Doe</h5>
+                    <h5 className="mb-2 text-lg font-bold">John Smith </h5>
                     <p className="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
                       Web Developer
                     </p>
                     <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                      Maecenas auctor, quam eget tincidunt pretium, felis diam
-                      semper turpis, sed scelerisque diam libero facilisis
-                      libero. Quisque vitae semper metus. Aliquam eu dui
-                      aliquam, faucibus metus quis, elementum nunc.
+                      Collaborating with Universal Tech on our complex website
+                      development project was a seamless experience. Their
+                      developers showcased exceptional technical skills and a
+                      deep understanding of our requirements. They made a
+                      fantastic website that streamlined our operations and
+                      enhanced efficiency. We look forward to working with them
+                      again. 
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 96 960 960"
@@ -289,15 +293,16 @@ export default function HomePage() {
                 />
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
-                    <h5 className="mb-2 text-lg font-bold">Anna Deynah</h5>
+                    <h5 className="mb-2 text-lg font-bold">David Bing </h5>
                     <p className="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
                       UX Designer
                     </p>
                     <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                      Duis sagittis, turpis in ullamcorper venenatis, ligula
-                      nibh porta dui, sit amet rutrum enim massa in ante.
-                      Curabitur in justo at lorem laoreet ultricies. Nunc ligula
-                      felis, sagittis eget nisi vitae ex arcu sit amet erat.
+                      Choosing Universal Tech was one of the best decisions we
+                      made. Their team’s professionalism and dedication to
+                      delivering the best solution are unmatched. They
+                      understood our unique business challenges and provided
+                      solutions accordingly; we will work with them next time.
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 96 960 960"
