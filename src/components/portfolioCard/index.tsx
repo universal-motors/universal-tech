@@ -22,13 +22,13 @@ export default function PortfolioCard({ e }: Prop) {
           objectFit: "cover",
         }}
       />
-      <div className="absolute  hover:bg-white  hover:!bg-opacity-80 w-[449px] h-[445px] flex items-center justify-center flex-col   ">
-        <p className=" group-hover:font-bold !hidden group-hover:!flex ">
+      <div className="absolute hover:bg-white hover:!bg-opacity-80 w-[449px] h-[445px] flex items-center justify-center flex-col text-center">
+        <p className="group-hover:font-bold !hidden group-hover:!flex">
           {e.heading}
         </p>
-        <div className="!hidden group-hover:!flex ">
-          <div className="flex flex-col justify-center items-center">
-            <div>{e.description}</div>
+        <div className="!hidden group-hover:!flex">
+          <div className="flex items-center justify-center flex-col">
+            {e.description}
           </div>
         </div>
       </div>
