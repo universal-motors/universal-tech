@@ -1,12 +1,76 @@
 import React from "react";
-
+import basit from "@/assets/images/basit image.png";
+import Image from "next/image";
+import baqar from "@/assets/images/baqar.png";
+import Ahmad from "@/assets/images/ahnad.jpeg";
+import Avatar from "@/assets/images/image-avatar.avif";
+import Siraj from "@/assets/images/siraj (1).png";
+import girls from "@/assets/images/girlss avatar.png";
+import maria from "@/assets/images/Maria.png.jpg";
 export default function Leadership() {
   const people = [
     {
-      name: "Leslie Alexander",
+      name: "Yousuf Sajid",
       role: "Co-Founder / CEO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      imageUrl: Avatar,
+    },
+    {
+      name: "Baqar Naqvi",
+      role: "Backend Lead ",
+      imageUrl: baqar,
+    },
+    {
+      name: "Mubashir Raza",
+      role: "Frontend Developer ",
+      imageUrl: Avatar,
+    },
+
+    {
+      name: "Muhammad Basit",
+      role: "SEO Lead ",
+      imageUrl: basit,
+    },
+    {
+      name: "Rida Wasim ",
+      role: "Content Writer ",
+      imageUrl: girls,
+    },
+    {
+      name: "Maria Khan",
+      role: "Frontend Interne",
+      imageUrl: maria,
+    },
+    {
+      name: "Ahmad Raza",
+      role: "Frontend Interne ",
+      imageUrl: Ahmad,
+    },
+
+    {
+      name: "Alina Nazir",
+      role: "HR Executive ",
+      imageUrl: girls,
+    },
+    {
+      name: "Kinza Rizwan",
+      role: "HR Executive ",
+      imageUrl: girls,
+    },
+    {
+      name: "Adeel Mohiuddin",
+      role: "Accounts Executive ",
+      imageUrl: Avatar,
+    },
+
+    {
+      name: "Siraj Uddin Khan",
+      role: "I.T Administrator  ",
+      imageUrl: Siraj,
+    },
+    {
+      name: "Mohammad Ibrahim Parkar",
+      role: "Accounts Officer ",
+      imageUrl: Avatar,
     },
   ];
   return (
@@ -14,7 +78,7 @@ export default function Leadership() {
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Meet Our Leaders
+            Meet Our Team
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Our dedicated team of experts who are passionate about transforming
@@ -29,8 +93,10 @@ export default function Leadership() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <img
+                <Image
                   className="h-16 w-16 rounded-full"
+                  width={64}
+                  height={64}
                   src={person.imageUrl}
                   alt=""
                 />
