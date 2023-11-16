@@ -21,7 +21,7 @@ export default function Leadership() {
     },
     {
       name: "Mubashir Raza",
-      role: "Frontend Developer ",
+      role: "Frontend Lead ",
       imageUrl: Avatar,
     },
 
