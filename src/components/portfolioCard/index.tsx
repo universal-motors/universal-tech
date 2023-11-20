@@ -11,7 +11,7 @@ type ArrType = {
 };
 export default function PortfolioCard({ e }: Prop) {
   return (
-    <div className="w-[90%]  md:w-[450px] m-auto h-[450px] border  group hover:text-[#1CA9C6]">
+    <div className="w-full  md:w-[450px] m-auto h-[450px] border  group hover:text-[#1CA9C6] relative">
       <Image
         alt="bistroChat"
         src={e.image}
