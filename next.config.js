@@ -20,7 +20,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+
         hostname: "source.unsplash.com",
+        hostname: "images-ext-1.discordapp.net",
+
         port: "",
         pathname: "/random",
       },

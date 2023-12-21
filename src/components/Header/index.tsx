@@ -9,11 +9,11 @@ export default function Header() {
   };
   return (
     <nav
-      className="navbar bg-white backdrop-blur !bg-opacity-30 py-6"
+      className="navbar  bg-white backdrop-blur !bg-opacity-30 py-6"
       id="navbar"
     >
       <div className="flex">
-        <div className="w-[83%] m-auto flex gap-48 flex-wrap items-center ">
+        <div className="w-[83%] m-auto flex gap-14 flex-wrap items-center ">
           <div>
             <svg
               width="99"
@@ -32,7 +32,7 @@ export default function Header() {
           <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
             <button
               type="button"
-              className="collapse-btn inline-flex items-center ms-3 text-dark dark:text-white lg_992:hidden"
+              className="collapse-btn inline-flex items-center ms-3 text-dark  dark:text-white lg_992:hidden"
               onClick={toggleMenu}
             >
               <span className="sr-only">Navigation Menu</span>
@@ -43,11 +43,11 @@ export default function Header() {
           <div
             className={`${
               isOpen === true ? "hidden" : "block"
-            } navigation lg_992:order-1 lg_992:flex`}
+            }   navigation lg_992:order-1 lg_992:flex`}
             id="menu-collapse"
           >
             <ul
-              className="navbar-nav nav-black flex gap-6 "
+              className="navbar-nav nav-black flex !items-center !flex-col lg:!flex-row gap-6 "
               id="navbar-navlist"
             >
               <CustomLink text="Home" to="#home" />

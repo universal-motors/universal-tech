@@ -113,7 +113,7 @@ export default function Portfolio() {
               </button>{" "}
             </div>
           </div>
-          <div className="w-[90%] flex flex-wrap  flex-row  justify-center items-center m-auto gap-5">
+          <div className="w-[90%]  grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-3 gap-14 m-auto">
             {arr.map((e, i) => {
               if (e.type === Arrtype) {
                 return (

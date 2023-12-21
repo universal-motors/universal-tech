@@ -11,18 +11,19 @@ type ArrType = {
 };
 export default function PortfolioCard({ e }: Prop) {
   return (
-    <div className="w-[90%] sm:w-[450px] m-auto h-[450px] border  group hover:text-[#1CA9C6]">
+    <div className="w-full  md:w-[450px] m-auto h-[450px] border  group hover:text-[#1CA9C6] relative">
       <Image
         alt="bistroChat"
         src={e.image}
+        className="!w-[80%] md:!w-[440px]"
         style={{
           position: "absolute",
-          width: "440px",
+          // width: "440px",
           height: "400px",
           objectFit: "cover",
         }}
       />
-      <div className="absolute hover:bg-white hover:!bg-opacity-80 w-[449px] h-[445px] flex items-center justify-center flex-col text-center">
+      <div className=" relative hover:!bg-white hover:!bg-opacity-80 w-full md:w-[449px] h-[445px] flex items-center justify-center flex-col text-center">
         <p className="group-hover:font-bold !hidden group-hover:!flex">
           {e.heading}
         </p>

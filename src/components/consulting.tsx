@@ -26,7 +26,7 @@ export default function Consulting() {
         </div>
       </div> */}
 
-      <div className="flex flex-col xl:flex-row  xl:justify-center pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
+      <div className="flex flex-col xl:flex-row  xl:justify-center pl-[35%] sm:pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
         <div className="mr-40">
           <div className="font-bold text-[16px]">Company Info</div>
           <div className="mt-8">About Us</div>
@@ -48,7 +48,7 @@ export default function Consulting() {
           <div className="mt-4">Live Chat</div>
           <div className="mt-4">Unlimited Support</div>
         </div>
-        <div className="mr-40">
+        <div className=" mr-40">
           <div className="font-bold text-[16px]">Resources</div>
           <div className="mt-8">IOS & Android</div>
           <div className="mt-4">Watch a Demo</div>
