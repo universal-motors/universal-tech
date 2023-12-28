@@ -4,12 +4,20 @@ import LeaveIcon from "@/assets/svgs/leave";
 import LyftIcon from "@/assets/svgs/lyft";
 import MaskIcon from "@/assets/svgs/mask";
 import StripeIcon from "@/assets/svgs/stripe";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 export default function Mask() {
+  // useEffect(() => {
+  //   AOS.init({ duration: 1200 })
+  // })
+  AOS.refresh();
   return (
-    <div className="bg-[#FAFAFA] flex-wrap mt-20">
-      <div className="bg-[#FAFAFA] w-[1440] h-[339] ml-0  flex-col sm:flex-row flex justify-evenly items-center flex-wrap gap-5">
+    <div className="bg-[#FAFAFA] flex-wrap mt-20 ">
+      <div
+        data-aos="fade-left"
+        className="bg-[#FAFAFA] w-[1440] h-[339] ml-0   flex-col sm:flex-row flex justify-evenly items-center flex-wrap gap-5"
+      >
         <div className="mt-20 mb-20">
           <HooliIcon />
         </div>

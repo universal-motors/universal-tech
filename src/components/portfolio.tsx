@@ -2,6 +2,8 @@ import React from "react";
 import bistrochat from "../../src/assets/images/bistroChat.png";
 import react, { useState } from "react";
 import PortfolioCard from "./portfolioCard";
+import { useEffect } from "react";
+import AOS from "aos";
 
 type ArrType = {
   image: any;
@@ -10,6 +12,10 @@ type ArrType = {
   heading: string;
 };
 export default function Portfolio() {
+  // useEffect(() => {
+  //   AOS.init({ duration: 1200 })
+  // })
+  AOS.refresh();
   const [Arrtype, setArrType] = useState("all");
   console.log(Arrtype);
 
@@ -68,7 +74,10 @@ export default function Portfolio() {
     setArrType("web");
   };
   return (
-    <div className="m-auto flex flex-col justify-center items-center">
+    <div
+      data-aos="fade-left"
+      className="m-auto flex flex-col justify-center items-center "
+    >
       <div id="portfolio">
         <div>
           <div className="mt-24">

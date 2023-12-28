@@ -1,8 +1,14 @@
 import CallIcon from "@/assets/svgs/call";
 import LocationIcon from "@/assets/svgs/location";
 import TweetIcon from "@/assets/svgs/tweet";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Getintouch() {
+  // useEffect(() => {
+  //   AOS.init({ duration: 1200 })
+  // })
+  AOS.refresh();
   return (
     <div className="bg-[#F3F3F3] ">
       <div className="text-center">
@@ -16,7 +22,10 @@ export default function Getintouch() {
         </div>
       </div>
       <div className=" flex-col md:flex-row  flex justify-center mt-24 items-end pb-10">
-        <div className="m-auto md:m-0  w-[95%] md:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
+        <div
+          data-aos="fade-right"
+          className="m-auto md:m-0   w-[95%] md:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7"
+        >
           <div className="ml-32">
             <CallIcon />
           </div>
@@ -31,7 +40,10 @@ export default function Getintouch() {
             </button>
           </div>
         </div>
-        <div className="m-auto md:m-0  w-[95%] md:w-[328px] h-[393px] bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 ">
+        <div
+          data-aos="fade-down"
+          className="m-auto md:m-0  w-[95%] md:w-[328px] h-[393px]  bg-[#252B42] flex flex-col justify-center text-center mt-7 lg:mt-1 "
+        >
           <div className="ml-32">
             <LocationIcon />
           </div>
@@ -49,7 +61,10 @@ export default function Getintouch() {
             </button>
           </div>
         </div>
-        <div className="m-auto md:m-0 w-[95%] md:w-[328px] h-[333px] bg-[#FFFFFF] flex flex-col justify-center text-center mt-7">
+        <div
+          data-aos="fade-left"
+          className="m-auto md:m-0 w-[95%] md:w-[328px] h-[333px] bg-[#FFFFFF]  flex flex-col justify-center text-center mt-7"
+        >
           <div className="ml-32">
             <TweetIcon />
           </div>
