@@ -3,11 +3,13 @@ import basit from "@/assets/images/basit.png";
 import Image from "next/image";
 import baqar from "@/assets/images/baqar.png";
 import Ahmad from "@/assets/images/ahmad.jpeg";
-import Avatar from "@/assets/images/image-avatar.avif";
+import Avatar from "@/assets/images/boys.avif";
 import Siraj from "@/assets/images/siraj.png";
-import girls from "@/assets/images/girlss avatar.png";
+import girls from "@/assets/images/girlss.png";
 import maria from "@/assets/images/Maria.png.jpg";
+import AOS from "aos";
 export default function Leadership() {
+  AOS.refresh();
   const people = [
     {
       name: "Yousuf Sajid",
@@ -72,7 +74,7 @@ export default function Leadership() {
   return (
     <div id="team" className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-2xl">
+        <div data-aos="fade-right" className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Meet Our Team
           </h2>
@@ -83,8 +85,9 @@ export default function Leadership() {
           </p>
         </div>
         <ul
+          data-aos="fade-left"
           role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 "
         >
           {people.map((person) => (
             <li key={person.name}>
