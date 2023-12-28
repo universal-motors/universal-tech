@@ -4,9 +4,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 export default function Testominal() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   const [currentIndex, setIndex] = useState(0);
   const testimonials = [

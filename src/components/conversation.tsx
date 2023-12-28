@@ -25,9 +25,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 export default function Conversation() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   return (
     <div id="contactus" className="mt-10 m-auto w-[90%] mb-10">

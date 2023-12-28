@@ -2,7 +2,6 @@ import React from "react";
 import bistrochat from "../../src/assets/images/bistroChat.png";
 import react, { useState } from "react";
 import PortfolioCard from "./portfolioCard";
-import { useEffect } from "react";
 import AOS from "aos";
 
 type ArrType = {
@@ -12,9 +11,6 @@ type ArrType = {
   heading: string;
 };
 export default function Portfolio() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   const [Arrtype, setArrType] = useState("all");
   console.log(Arrtype);

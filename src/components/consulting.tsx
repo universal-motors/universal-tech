@@ -10,9 +10,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 export default function Consulting() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   return (
     <div>

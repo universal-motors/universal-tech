@@ -5,9 +5,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 export default function Getintouch() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   return (
     <div className="bg-[#F3F3F3] ">

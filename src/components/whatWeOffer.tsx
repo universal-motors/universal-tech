@@ -3,9 +3,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 export default function WhatWeOffer() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   return (
     <div id="services">

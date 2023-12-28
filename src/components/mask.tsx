@@ -8,9 +8,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 
 export default function Mask() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200 })
-  // })
   AOS.refresh();
   return (
     <div className="bg-[#FAFAFA] flex-wrap mt-20 ">
