@@ -10,16 +10,28 @@ import Portfolio from "@/components/portfolio";
 import WhatWeOffer from "@/components/whatWeOffer";
 import WhoWeAre from "@/components/whoWeAre";
 import WhyChooseUs from "@/components/whyChooseUs";
-import { Box } from "@mui/material";
+import { Box, easing } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import Setusapart from "./dashboard/components/Setusapart";
 import Testominal from "./dashboard/components/testominal";
-
+import "animate.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function HomePage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease-in-out",
+      anchorPlacement: "top-bottom",
+    });
+  });
+  AOS.refresh();
+
   return (
-    <Box sx={{ width: "100%" }}>
-      <div id="home" className="relative w-full h-[90vh]">
+    <Box sx={{ width: "100%", overflow: "hidden" }}>
+      <div id="home" data-aos="fade-left" className="relative w-full h-[90vh] ">
         <Image
           src={img}
           alt="img"
