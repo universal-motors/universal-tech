@@ -34,13 +34,7 @@ export default function Consulting() {
           <div className="mt-4">We are hiring</div>
           <div className="mt-4">Blog</div>
         </div>
-        <div className="mr-40">
-          <div className="font-bold text-[16px]">Legal</div>
-          <div className="mt-8">About Us</div>
-          <div className="mt-4">Carrier</div>
-          <div className="mt-4">We are hiring</div>
-          <div className="mt-4">Blog</div>
-        </div>
+
         <div className="mr-40">
           <div className="font-bold text-[16px]">Features</div>
           <div className="mt-8">Business Marketing</div>
@@ -61,19 +55,19 @@ export default function Consulting() {
             <div className="mr-3 mt-8">
               <PhoneIcon />
             </div>
-            <div className="mt-8">(480) 555-0103</div>
+            <div className="mt-8">03373244955</div>
           </div>
           <div className="flex mt-4">
             <div className="mr-3">
               <Location2Icon />
             </div>
-            <div>4517 Washington Ave. Manchester, Kentucky 39495</div>
+            <div>Gulshan-e-Iqbal, Block 10, Nipa Chowrangi Karcahi. </div>
           </div>
           <div className="flex mt-4">
             <div className="mr-3 ">
               <Tweeter2Icon />
             </div>
-            <div>debra.holt@example.com</div>
+            <div>hrpk@universalmotorsltd.com</div>
           </div>
         </div>
       </div>

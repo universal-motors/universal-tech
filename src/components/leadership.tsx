@@ -1,10 +1,10 @@
 import React from "react";
-import basit from "@/assets/images/basit image.png";
+import basit from "@/assets/images/basit.png";
 import Image from "next/image";
 import baqar from "@/assets/images/baqar.png";
-import Ahmad from "@/assets/images/ahnad.jpeg";
+import Ahmad from "@/assets/images/ahmad.jpeg";
 import Avatar from "@/assets/images/image-avatar.avif";
-import Siraj from "@/assets/images/siraj (1).png";
+import Siraj from "@/assets/images/siraj.png";
 import girls from "@/assets/images/girlss avatar.png";
 import maria from "@/assets/images/Maria.png.jpg";
 export default function Leadership() {
@@ -37,12 +37,12 @@ export default function Leadership() {
     },
     {
       name: "Maria Khan",
-      role: "Frontend Interne",
+      role: "Frontend Internee",
       imageUrl: maria,
     },
     {
       name: "Ahmad Raza",
-      role: "Frontend Interne ",
+      role: "Frontend Internee ",
       imageUrl: Ahmad,
     },
 
@@ -51,11 +51,7 @@ export default function Leadership() {
       role: "HR Executive ",
       imageUrl: girls,
     },
-    {
-      name: "Kinza Rizwan",
-      role: "HR Executive ",
-      imageUrl: girls,
-    },
+
     {
       name: "Adeel Mohiuddin",
       role: "Accounts Executive ",

@@ -21,11 +21,9 @@ export default function Getintouch() {
             <CallIcon />
           </div>
           <div className="text-[#252B42] mt-2 font-semibold">
-            <p>georgia.young@example.com</p>
+            <p>03373244955</p>
           </div>
-          <div className="text-[#252B42] mt-2 font-semibold">
-            georgia.young@ple.com
-          </div>
+
           <div className="font-bold text-[#252B42] mt-4">Get Support</div>
           <div>
             <button className="text-[14px] w-[160px] h-[44px] text-[#FFA62B] border border-[#FFA62B] font-semibold mt-5 rounded hover:bg-[#FFA62B] hover:text-[#FFFFFF]">
@@ -38,9 +36,12 @@ export default function Getintouch() {
             <LocationIcon />
           </div>
           <div className="text-[#FFFFFF] mt-2">
-            <p>georgia.young@example.com</p>
+            <p>
+              Suit 109 & 110 Mezzanine Floor, Maqbool Heights Gulshan-e-Iqbal,
+              Block 10, Nipa Chowrangi, Karachi Pakistan.
+            </p>
           </div>
-          <div className="text-[#FFFFFF]">georgia.young@ple.com</div>
+
           <div className="text-[#FFFFFF] font-bold mt-4">Get Support</div>
           <div>
             <button className="text-[14px] w-[160px] h-[44px] text-[#FFFFFF] border border-[#FFFFFF] mt-5 rounded hover:bg-[#FFFFFF] hover:text-[#252B42]">
@@ -53,11 +54,9 @@ export default function Getintouch() {
             <TweetIcon />
           </div>
           <div className="text-[#252B42] mt-2 font-semibold">
-            <p>georgia.young@example.com</p>
+            <p>hrpk@universalmotorsltd.com</p>
           </div>
-          <div className="text-[#252B42] mt-2 font-semibold">
-            georgia.young@ple.com
-          </div>
+
           <div className="font-bold text-[#252B42] mt-4">Get Support</div>
           <div>
             <button className="text-[14px] w-[160px] h-[44px] text-[#FFA62B]  border border-[#FFA62B] font-semibold mt-5 rounded hover:bg-[#FFA62B] hover:text-[#FFFFFF]">
