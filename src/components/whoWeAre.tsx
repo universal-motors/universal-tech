@@ -1,4 +1,4 @@
-import about1 from "@/assets/images/new/responsive.gif";
+import img from "@/assets/images/computer.gif";
 import Image from "next/image";
 
 export default function WhoWeAre() {
@@ -36,7 +36,7 @@ export default function WhoWeAre() {
         </div>
       </div>
       <div className="w-[90%] m-auto md:w-[558px] xl:m-0 h-[419px]">
-        <Image alt="about1" src={about1} />
+        <Image alt="" src={img} />
       </div>
     </div>
   );

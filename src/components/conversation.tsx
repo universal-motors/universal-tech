@@ -43,10 +43,11 @@ export default function Conversation() {
                   Address
                 </div>
                 <div className="text-[12px] sm:text-[14px] text-[#444444]">
-                  Office No. 5, Mazhar Arcade
+                  Suit 109 & 110 Mezzanine Floor, Maqbool Heights
+                  Gulshan-e-Iqbal, Block 10, Nipa Chowrangi
                 </div>
                 <div className="text-[12px] sm:text-[14px]">
-                  Bahadurabad Karachi, Pakistan
+                  Karachi, Pakistan
                 </div>
               </div>
             </div>
@@ -62,7 +63,7 @@ export default function Conversation() {
                   Monday - Friday
                 </div>
                 <div className="text-[#444444] text-[12px] sm:text-[14px]">
-                  9:00AM - 05:00PM
+                  9:30AM-10:00PM
                 </div>
               </div>
             </div>
@@ -77,7 +78,7 @@ export default function Conversation() {
                   Email Us
                 </div>
                 <div className="text-[#444444] text-[12px] sm:text-[14px]">
-                  info@expertizo.pk
+                  hrpk@universalmotorsltd.com
                 </div>
               </div>
             </div>
@@ -87,14 +88,12 @@ export default function Conversation() {
               </div>
               <div className="ml-5 mt-5">
                 <div className="text-[#00A0C1] font-bold text-[14px] sm:text-[20px]">
-                  Address
+                  Contact
                 </div>
                 <div className="text-[#444444] text-[12px] sm:text-[14px]">
-                  Office No. 5, Mazhar Arcade
+                  03373244955
                 </div>
-                <div className="text-[#444444] text-[12px] sm:text-[14px]">
-                  Bahadurabad Karachi, Pakistan
-                </div>
+                <div className="text-[#444444] text-[12px] sm:text-[14px]"></div>
               </div>
             </div>
           </div>
