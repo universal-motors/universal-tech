@@ -3,8 +3,11 @@ import CasesIcon from "@/assets/svg2/cases";
 import HappyIcon from "@/assets/svg2/happy";
 import ThreeIcon from "@/assets/svg2/three";
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function WhyChooseUs() {
+  AOS.refresh();
   return (
     <div>
       <div className="text-center">
@@ -20,7 +23,10 @@ export default function WhyChooseUs() {
         </div>
       </div>
       <div className="flex flex-wrap gap-y-2 justify-center mt-[50px]">
-        <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px]  flex flex-col items-center justify-center">
+        <div
+          data-aos="fade-right"
+          className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px]  flex flex-col items-center justify-center "
+        >
           <div className="w-[50px] h-[50px]">
             <ThreeIcon />
           </div>
@@ -30,7 +36,10 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center ">
+        <div
+          data-aos="fade-up"
+          className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center "
+        >
           <div>
             <HappyIcon />
           </div>
@@ -40,7 +49,10 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
+        <div
+          data-aos="fade-down"
+          className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center "
+        >
           <div>
             <AwardIcon />
           </div>
@@ -48,7 +60,10 @@ export default function WhyChooseUs() {
           <div className="text-[#737373] font-bold">Completed Projects</div>
         </div>
 
-        <div className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center">
+        <div
+          data-aos="fade-right"
+          className="shadow w-[230px] h-[209px] ml-0 sm:ml-[30px] flex flex-col items-center justify-center "
+        >
           <div>
             <CasesIcon />
           </div>

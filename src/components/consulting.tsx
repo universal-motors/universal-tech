@@ -6,26 +6,12 @@ import Tweeter2Icon from "@/assets/svgs/tweeter2";
 import Tweeter3Icon from "@/assets/svgs/tweeter3";
 import YoutubeIcon from "@/assets/svgs/youtube";
 import React from "react";
+import AOS from "aos";
 
 export default function Consulting() {
+  AOS.refresh();
   return (
     <div>
-      {/* <div className=" flex  justify-evenly bg-[#FAFAFA]  sm:h-[142px] pt-14 ">
-        <div>
-          <div className="font-bold text-[24px]">
-            Consulting Agency For Your Business
-          </div>
-          <div className="text-[14px] text-[#737373] font-normal mt-3">
-            the quick fox jumps over the lazy dog
-          </div>
-        </div>
-        <div>
-          <button className="w-[160px] h-[58px] text-[#FFFFFF] bg-[#16697A] border rounded hover:bg-[#FAFAFA]  hover:text-[#16697A] hover:border-[#16697A] ">
-            Contact Us
-          </button>
-        </div>
-      </div> */}
-
       <div className="flex flex-wrap flex-row  xl:justify-center pl-5 sm:pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
         <div className="mr-40">
           <div className="font-bold text-[16px]">Company Info</div>
@@ -35,21 +21,21 @@ export default function Consulting() {
           <div className="mt-4">Blog</div>
         </div>
 
-        <div className="mr-40">
+        <div data-aos="fade-right" className="mr-40">
           <div className="font-bold text-[16px]">Features</div>
           <div className="mt-8">Business Marketing</div>
           <div className="mt-4">User Analytic</div>
           <div className="mt-4">Live Chat</div>
           <div className="mt-4">Unlimited Support</div>
         </div>
-        <div className=" mr-40">
+        <div data-aos="fade-left" className=" mr-40 ">
           <div className="font-bold text-[16px]">Resources</div>
           <div className="mt-8">IOS & Android</div>
           <div className="mt-4">Watch a Demo</div>
           <div className="mt-4">Customers</div>
           <div className="mt-4">API</div>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <div className="font-bold text-[16px]">Get In Touch</div>
           <div className="flex">
             <div className="mr-3 mt-8">

@@ -21,8 +21,11 @@ import setUs from "@/assets/images/123.png";
 import DoneIcon from "@mui/icons-material/Done";
 import WhoWeAre from "@/components/whoWeAre";
 import WhatWeOffer from "@/components/whatWeOffer";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Conversation() {
+  AOS.refresh();
   return (
     <div id="contactus" className="mt-10 m-auto w-[90%] mb-10">
       <div className="text-center">
@@ -32,9 +35,9 @@ export default function Conversation() {
         </div>
       </div>
       <div className="flex flex-col xl:flex-row  justify-center items-center m-auto ">
-        <div>
+        <div data-aos="fade-right">
           <div className="flex flex-col sm:flex-row justify-center gap-4 m-auto items-center">
-            <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+            <div className="bg-[#FAFBFF] w-[306px] h-[201px]  flex flex-col justify-center ">
               <div>
                 <PlaceIcon sx={{ fontSize: "70px", color: "#00A0C1" }} />
               </div>
@@ -51,7 +54,7 @@ export default function Conversation() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+            <div className="bg-[#FAFBFF] w-[306px] animate__animated animate__bounceInDown h-[201px] flex flex-col justify-center ">
               <div className="ml-5">
                 <AccessTimeIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
               </div>
@@ -69,7 +72,7 @@ export default function Conversation() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row  justify-center gap-4 items-center m-auto mt-3">
-            <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+            <div className="bg-[#FAFBFF] w-[306px] h-[201px] animate__animated animate__bounceInLeft flex flex-col justify-center ">
               <div className="ml-5">
                 <MailOutlineIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
               </div>
@@ -82,7 +85,7 @@ export default function Conversation() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#FAFBFF] w-[306px] h-[201px] flex flex-col justify-center ">
+            <div className="bg-[#FAFBFF] w-[306px] h-[201px] animate__animated animate__bounceInUp flex flex-col justify-center ">
               <div className="ml-5">
                 <PhoneIcon sx={{ fontSize: "50px", color: "#00A0C1" }} />
               </div>
@@ -98,7 +101,10 @@ export default function Conversation() {
             </div>
           </div>
         </div>
-        <div className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%] md:w-[636px] h-[426px] pt-6 md:pt-0 mt-12 xl:mt-0 flex flex-col justify-center items-center  ">
+        <div
+          data-aos="fade-left"
+          className="ml-0 xl:ml-5 bg-[#FAFBFF] w-[90%]  md:w-[636px] h-[426px] pt-6 md:pt-0 mt-12 xl:mt-0 flex flex-col justify-center items-center  "
+        >
           <div className="flex flex-col md:flex-row gap-5 ">
             <div>
               <input

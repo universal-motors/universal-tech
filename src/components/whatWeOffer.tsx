@@ -1,6 +1,9 @@
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function WhatWeOffer() {
+  AOS.refresh();
   return (
     <div id="services">
       <div className="text-center font-bold mt-40">
@@ -9,8 +12,11 @@ export default function WhatWeOffer() {
           Comprehensive Services and Solutions
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-28">
-        <div className="flex flex-col justify-center  lg:ml-5 text-center items-center  group  w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#2DB6FA] hover:text-[#ffffff]">
+      <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-28 ">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col justify-center  lg:ml-5 text-center items-center  group  w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#2DB6FA] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#2DB6FA]  group-hover:bg-[#ffffff] bg-[#2DB6FA]/40 rounded-lg">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -23,7 +29,10 @@ export default function WhatWeOffer() {
             <div>tailored to your business requirements. </div>
           </div>
         </div>
-        <div className="flex flex-col  lg:mr-1 justify-center text-center group items-center w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F68C09] hover:text-[#ffffff]">
+        <div
+          data-aos="fade-down"
+          className="flex flex-col  lg:mr-1 justify-center text-center group  items-center w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F68C09] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#F68C09]  group-hover:bg-[#ffffff] bg-[#F68C09]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -34,7 +43,10 @@ export default function WhatWeOffer() {
             <div>appealing and enhance your online presence.</div>
           </div>
         </div>
-        <div className="flex flex-col justify-center  lg:mr-5 text-center items-center group w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#08DA4E] hover:text-[#ffffff]">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col justify-center  lg:mr-5 text-center items-center group w-[90%] lg:w-[356px]  h-[415px] shadow rounded hover:bg-[#08DA4E] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#08DA4E]  group-hover:bg-[#ffffff] bg-[#08DA4E]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -46,8 +58,11 @@ export default function WhatWeOffer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-center m-auto gap-5 mt-8">
-        <div className="flex flex-col justify-center  text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#E9222C] hover:text-[#ffffff]">
+      <div className="flex flex-col animate__animated  lg:flex-row justify-center items-center m-auto gap-5 mt-8">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col justify-center text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#E9222C] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#E9222C]  group-hover:bg-[#ffffff] bg-[#E9222C]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -61,7 +76,10 @@ export default function WhatWeOffer() {
             <div>the productivity of your business.</div>
           </div>
         </div>
-        <div className="flex flex-col justify-center text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#B50EDF] hover:text-[#ffffff]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col justify-center text-center items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#B50EDF] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#B50EDF]  group-hover:bg-[#ffffff] bg-[#B50EDF]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>
@@ -74,7 +92,10 @@ export default function WhatWeOffer() {
             <div>platforms to save time and resources for clients.</div>
           </div>
         </div>
-        <div className="flex flex-col justify-center  text-center  items-center group w-[90%] lg:w-[356px] h-[415px] shadow rounded hover:bg-[#F51F9C] hover:text-[#ffffff]">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col justify-center  text-center  items-center group w-[90%] lg:w-[356px] h-[415px]  shadow rounded hover:bg-[#F51F9C] hover:text-[#ffffff]"
+        >
           <div className="w-20 h-20 pt-7 text-[#F51F9C]  group-hover:bg-[#ffffff] bg-[#F51F9C]/40 rounded-lg ">
             <ChatBubbleOutlineIcon sx={{ fontSize: "30px" }} />
           </div>

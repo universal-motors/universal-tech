@@ -1,7 +1,10 @@
 import { log } from "console";
 import React, { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Testominal() {
+  AOS.refresh();
   const [currentIndex, setIndex] = useState(0);
   const testimonials = [
     {
@@ -40,7 +43,7 @@ export default function Testominal() {
     if (currentIndex > 0) setIndex(currentIndex - 1);
   };
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div data-aos="fade-left" className="container my-24 mx-auto md:px-6 ">
       <section className="mb-32 text-center">
         <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
 
