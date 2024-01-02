@@ -3,7 +3,7 @@ import basit from "@/assets/images/basit.png";
 import Image from "next/image";
 import baqar from "@/assets/images/baqar.png";
 import Ahmad from "@/assets/images/ahmad.jpeg";
-import Avatar from "@/assets/images/boys.avif";
+import Avatar from "@/assets/images/boy.png";
 import Siraj from "@/assets/images/siraj.png";
 import girls from "@/assets/images/girlss.png";
 import maria from "@/assets/images/Maria.png.jpg";

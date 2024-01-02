@@ -31,7 +31,11 @@ export default function HomePage() {
 
   return (
     <Box sx={{ width: "100%", overflow: "hidden" }}>
-      <div id="home" data-aos="fade-left" className="relative w-full h-[90vh] ">
+      <div
+        id="home"
+        data-aos="fade-left"
+        className="relative w-full h-[100vh] "
+      >
         <Image
           src={img}
           alt="img"
@@ -43,10 +47,10 @@ export default function HomePage() {
           }}
         />
         <div className="absolute w-full">
-          <div className="flex items-center flex-col gap-10 md:gap-0 md:flex-row justify-center md:justify-between mt-40 w-[75%] m-auto">
+          <div className="flex items-center gap-10 md:gap-0 flex-col sm:flex-row justify-center  mt-40 w-[75%] m-auto">
             <div>
               <div className="grid grid-cols-1 ">
-                <h1 className="text-black font-extrabold text-[30px] sm:text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
+                <h1 className="text-black font-extrabold !text-[20px] sm:!text-[30px] lg:!text-[58px] text-Montserrat lg:text-5xl text-4xl lg:leading-normal leading-normal mb-7 position-relative">
                   We offer Digital Solutions <br /> That Empower Businesses and
                   Individuals.
                   <span
@@ -56,7 +60,7 @@ export default function HomePage() {
                     data-type='[ "Business", "Startups", "Digital Agency", "Marketing" ]'
                   ></span>
                 </h1>
-                <p className="text-[#737373] text-[30px]  mb-0 max-w-2xl text-lg">
+                <p className="text-[#737373] text-[20px] lg:text-[30px]  mb-0 max-w-2xl text-lg">
                   We deliver software services tailored to meet your unique
                   needs and to transform your businesses digitally.
                 </p>
@@ -65,7 +69,7 @@ export default function HomePage() {
                 <div className="relative mt-10 ">
                   <Link
                     href="#"
-                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#E7EBEE] text-[#ffffff] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1]  rounded-full"
+                    className="w-[130px] text-xs sm:text-base sm:w-[185px] h-[48px] btn bg-[#00A0C1] hover:bg-[#F1F5FD] text-[#ffffff] hover:text-[#00A0C1] pt-4 sm:pt-[12px] hover:border-[#00A0C1]  rounded-full"
                   >
                     Get Quote Now
                   </Link>
