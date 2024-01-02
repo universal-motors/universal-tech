@@ -1,5 +1,11 @@
 import React from "react";
-import bistrochat from "../../src/assets/images/bistroChat.png";
+import Image from "next/image";
+import image from "@/assets/images/image.png";
+import cars from "@/assets/images/cars.png";
+import auto from "@/assets/images/auto.png";
+import imgzone from "@/assets/images/imgzone.png";
+import imgstud from "@/assets/images/imgstud.png";
+import graph from "@/assets/images/graph.png";
 import react, { useState } from "react";
 import PortfolioCard from "./portfolioCard";
 import AOS from "aos";
@@ -17,42 +23,42 @@ export default function Portfolio() {
 
   const arr: ArrType[] = [
     {
-      image: bistrochat,
+      image: image,
       type: "app",
       heading: "Bistro Chat",
       description:
         "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
-      image: bistrochat,
+      image: cars,
       type: "app",
       heading: "Bistro Chat",
       description:
         "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
-      image: bistrochat,
+      image: auto,
       type: "app",
       heading: "Bistro Chat",
       description:
         "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
-      image: bistrochat,
+      image: imgzone,
       type: "app",
       heading: "Bistro Chat",
       description:
         "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
-      image: bistrochat,
+      image: imgstud,
       type: "web",
       heading: "Bistro Chat",
       description:
         "WITH BISTROCHAT YOU CAN BOOK A RESTAURANT IN HONGKONG WITHIN 10 SEC! JUST CHAT DIRECTLY WITH THE STAFF AND CONFIRM YOUR BOOKING.",
     },
     {
-      image: bistrochat,
+      image: graph,
       type: "web",
       heading: "Bistro Chat",
       description:
