@@ -23,7 +23,7 @@ export default function PortfolioCard({ e }: Prop) {
           objectFit: "cover",
         }}
       />
-      <div className=" relative hover:!bg-white hover:!bg-opacity-80 w-full md:w-[449px] h-[445px] flex items-center justify-center flex-col text-center">
+      {/* <div className=" relative hover:!bg-white hover:!bg-opacity-80 w-full md:w-[449px] h-[445px] flex items-center justify-center flex-col text-center">
         <p className="group-hover:font-bold !hidden group-hover:!flex">
           {e.heading}
         </p>
@@ -32,7 +32,7 @@ export default function PortfolioCard({ e }: Prop) {
             {e.description}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

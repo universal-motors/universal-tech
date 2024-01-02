@@ -14,7 +14,7 @@ export default function Header() {
     >
       <div className="flex">
         <div className="w-[83%] m-auto flex gap-14 flex-wrap items-center ">
-          <div>
+          <div className="pl-2">
             <svg
               width="99"
               height="24"
@@ -50,12 +50,24 @@ export default function Header() {
               className="navbar-nav nav-black flex !items-center !flex-col lg:!flex-row gap-6 "
               id="navbar-navlist"
             >
-              <CustomLink text="Home" to="#home" />
-              <CustomLink text="About us" to="#aboutus" />
-              <CustomLink text="Services" to="#services" />
-              <CustomLink text="Portfolio" to="#portfolio" />
-              <CustomLink text="Team" to="#team" />
-              <CustomLink text="Contact us" to="#contactus" />
+              <div onClick={toggleMenu}>
+                <CustomLink text="Home" to="#home" />
+              </div>
+              <div onClick={toggleMenu}>
+                <CustomLink text="About us" to="#aboutus" />
+              </div>
+              <div onClick={toggleMenu}>
+                <CustomLink text="Services" to="#services" />
+              </div>
+              <div onClick={toggleMenu}>
+                <CustomLink text="Portfolio" to="#portfolio" />
+              </div>
+              <div onClick={toggleMenu}>
+                <CustomLink text="Team" to="#team" />
+              </div>
+              <div onClick={toggleMenu}>
+                <CustomLink text="Contact us" to="#contactus" />
+              </div>
             </ul>
           </div>
         </div>

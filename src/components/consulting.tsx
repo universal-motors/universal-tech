@@ -6,15 +6,14 @@ import Tweeter2Icon from "@/assets/svgs/tweeter2";
 import Tweeter3Icon from "@/assets/svgs/tweeter3";
 import YoutubeIcon from "@/assets/svgs/youtube";
 import React from "react";
-import { useEffect } from "react";
 import AOS from "aos";
 
 export default function Consulting() {
   AOS.refresh();
   return (
     <div>
-      <div className="flex flex-col xl:flex-row  xl:justify-center pl-[35%] sm:pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
-        <div data-aos="fade-right" className="mr-40">
+      <div className="flex flex-wrap flex-row  xl:justify-center pl-5 sm:pl-[40%] xl:pl-1 text-[#FFFFFF] bg-[#16697A] text-[14px] font-semibold pt-14 pb-14 ">
+        <div className="mr-40">
           <div className="font-bold text-[16px]">Company Info</div>
           <div className="mt-8">About Us</div>
           <div className="mt-4">Carrier</div>
@@ -59,11 +58,11 @@ export default function Consulting() {
         </div>
       </div>
 
-      <div className=" flex flex-col lg:flex-row animate__animated animate__bounceInRight lg:justify-between pt-8 bg-[#FAFAFA] pb-8">
-        <div className="ml-0 lg:ml-52">
+      <div className=" flex flex-col lg:flex-row  lg:justify-between  pl-4 pt-8 bg-[#FAFAFA] pb-8 ">
+        <div className="ml-0 lg:ml-52  mt-4">
           Made With Love By Figmaland All Right Reserved
         </div>
-        <div className="flex  mr-52 ">
+        <div className="flex  mr-52 pl-12 items-center mt-4 ">
           <div className="mr-7">
             <FacebookIcon />
           </div>
