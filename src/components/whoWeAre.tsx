@@ -1,6 +1,5 @@
 import img from "@/assets/images/coding.jpg";
 import Image from "next/image";
-import { useEffect } from "react";
 import AOS from "aos";
 
 export default function WhoWeAre() {
